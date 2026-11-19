@@ -2,7 +2,8 @@
 
 import { useMemo, useState } from 'react';
 import { Search } from 'lucide-react';
-import { GENEROS, MOSTRAR_PRECO, TIPOS, brl, type Produto } from '@/lib';
+import { GENEROS, TIPOS, type Produto } from '@/lib';
+import Preco from '@/components/Preco';
 import { DadosProvider, useProdutos } from '@/components/Dados';
 import { BotaoCarrinho, CarrinhoProvider, useCarrinho } from '@/components/Carrinho';
 
@@ -49,7 +50,7 @@ function Cartao({ p, abrir }: { p: Produto; abrir: () => void }) {
             {GENEROS[p.genero]}
             {p.linha ? ` · Linha ${p.linha}` : ''}
           </p>
-          {MOSTRAR_PRECO && p.preco != null && <p className="mt-2 font-semibold text-flora-700">{brl(p.preco)}</p>}
+          <div className="mt-2"><Preco p={p} /></div>
         </div>
       </button>
       <div className="p-4 pt-2">
@@ -95,7 +96,7 @@ function Detalhe({ p, fechar }: { p: Produto; fechar: () => void }) {
                 ))}
               </div>
             )}
-            {MOSTRAR_PRECO && p.preco != null && <p className="text-xl font-semibold text-flora-700">{brl(p.preco)}</p>}
+            <Preco p={p} grande />
             <BotaoAdicionar id={p.id} />
           </div>
         </div>
@@ -116,7 +117,8 @@ export default function Catalogo() {
 }
 
 function Vitrine() {
-  const produtos = useProdutos();
+  const todos = useProdutos();
+  const produtos = useMemo(() => todos.filter((p) => !p.oculto), [todos]);
   const [busca, setBusca] = useState('');
   const [tipo, setTipo] = useState('');
   const [genero, setGenero] = useState('');

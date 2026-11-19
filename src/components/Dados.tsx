@@ -3,25 +3,43 @@
 import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import { produtos as base, type Produto } from '@/lib';
 
-// Lista de produtos com os preços alterados no painel (D1) aplicados por cima do catalogo.json.
-// Se a API falhar, o site continua com os preços do catalogo.json.
+type Ajuste = { preco?: number; promo?: number; oculto?: boolean; nome?: string; descricao?: string };
+
+// Lista de produtos com os ajustes do painel (D1) aplicados por cima do catalogo.json.
+// Itens ocultos continuam na lista (com oculto: true) para o carrinho poder removê-los; a vitrine filtra.
+// Se a API falhar, o site continua com o catalogo.json.
 const Ctx = createContext<Produto[]>(base);
 export const useProdutos = () => useContext(Ctx);
 
 export function DadosProvider({ children }: { children: React.ReactNode }) {
-  const [precos, setPrecos] = useState<Record<string, number>>({});
+  const [ajustes, setAjustes] = useState<Record<string, Ajuste>>({});
 
   useEffect(() => {
     let vivo = true;
-    fetch('/api/precos')
+    fetch('/api/ajustes')
       .then((r) => (r.ok ? r.json() : {}))
-      .then((d) => vivo && typeof d === 'object' && d && setPrecos(d as Record<string, number>))
+      .then((d) => vivo && typeof d === 'object' && d && setAjustes(d as Record<string, Ajuste>))
       .catch(() => {});
     return () => {
       vivo = false;
     };
   }, []);
 
-  const lista = useMemo(() => base.map((p) => (precos[p.id] != null ? { ...p, preco: precos[p.id] } : p)), [precos]);
+  const lista = useMemo(
+    () =>
+      base.map((p) => {
+        const a = ajustes[p.id];
+        if (!a) return p;
+        return {
+          ...p,
+          preco: a.preco ?? p.preco,
+          promo: a.promo ?? null,
+          oculto: !!a.oculto,
+          nome: a.nome ?? p.nome,
+          descricao: a.descricao ?? p.descricao,
+        };
+      }),
+    [ajustes],
+  );
   return <Ctx.Provider value={lista}>{children}</Ctx.Provider>;
 }

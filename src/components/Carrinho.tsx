@@ -2,7 +2,7 @@
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { Minus, Plus, ShoppingBag, Trash2, X } from 'lucide-react';
-import { MOSTRAR_PRECO, TIPOS, brl, produtos as base, type Produto } from '@/lib';
+import { MOSTRAR_PRECO, TIPOS, brl, desconto, emPromocao, valor, produtos as base, type Produto } from '@/lib';
 import { useProdutos } from '@/components/Dados';
 
 // Número da loja (formato wa.me: DDI + DDD + número, só dígitos)
@@ -61,7 +61,11 @@ export function CarrinhoProvider({ children }: { children: React.ReactNode }) {
   const adicionar = useCallback((id: string) => alterar(id, 1), [alterar]);
   const remover = useCallback((id: string) => setItens(({ [id]: _, ...r }) => r), []);
   const limpar = useCallback(() => setItens({}), []);
-  const total = useMemo(() => Object.values(itens).reduce((a, b) => a + b, 0), [itens]);
+  const todos = useProdutos();
+  const total = useMemo(
+    () => Object.entries(itens).reduce((a, [id, q]) => a + (todos.find((p) => p.id === id)?.oculto ? 0 : q), 0),
+    [itens, todos],
+  );
 
   return (
     <CarrinhoCtx.Provider value={{ itens, total, adicionar, alterar, remover, limpar, aberto, abrir }}>
@@ -89,10 +93,10 @@ export function BotaoCarrinho() {
 function montarMensagem(linhas: { p: Produto; q: number }[]) {
   const partes = linhas.map(({ p, q }, i) => {
     const vol = p.volumeMl ? ` ${p.volumeMl}ml` : '';
-    const preco = MOSTRAR_PRECO && p.preco != null ? ` (${brl(p.preco)} cada)` : '';
+    const preco = !MOSTRAR_PRECO || p.preco == null ? '' : emPromocao(p) ? ` (de ${brl(p.preco)} por ${brl(valor(p) as number)} cada, ${desconto(p)}% OFF)` : ` (${brl(p.preco)} cada)`;
     return `${i + 1}. ${q}x ${p.nome}${vol} — ${TIPOS[p.tipo]}${preco}${p.codigo ? ` [cód. ${p.codigo}]` : ''}`;
   });
-  const soma = linhas.reduce((s, { p, q }) => s + (p.preco ?? 0) * q, 0);
+  const soma = linhas.reduce((s, { p, q }) => s + (valor(p) ?? 0) * q, 0);
   const semPreco = linhas.some(({ p }) => p.preco == null);
   const totalTxt = MOSTRAR_PRECO && soma > 0 ? `\n\nTotal estimado: ${brl(soma)}${semPreco ? ' (+ itens sem preço informado)' : ''}` : '';
   return `Olá! Gostaria de fazer um pedido:\n\n${partes.join('\n')}${totalTxt}`;
@@ -102,10 +106,10 @@ function Gaveta() {
   const { itens, total, alterar, remover, limpar, aberto, abrir } = useCarrinho();
   const produtos = useProdutos();
   const linhas = useMemo(
-    () => Object.entries(itens).flatMap(([id, q]) => { const p = produtos.find((x) => x.id === id); return p ? [{ p, q }] : []; }),
+    () => Object.entries(itens).flatMap(([id, q]) => { const p = produtos.find((x) => x.id === id); return p && !p.oculto ? [{ p, q }] : []; }),
     [itens, produtos],
   );
-  const soma = linhas.reduce((s, { p, q }) => s + (p.preco ?? 0) * q, 0);
+  const soma = linhas.reduce((s, { p, q }) => s + (valor(p) ?? 0) * q, 0);
   const link = `https://wa.me/${WHATSAPP_LOJA}?text=${encodeURIComponent(montarMensagem(linhas))}`;
 
   if (!aberto) return null;
@@ -133,7 +137,7 @@ function Gaveta() {
                     {TIPOS[p.tipo]}
                     {p.volumeMl ? ` · ${p.volumeMl} ml` : ''}
                   </p>
-                  {MOSTRAR_PRECO && p.preco != null && <p className="text-sm font-medium text-flora-700">{brl(p.preco * q)}</p>}
+                  {MOSTRAR_PRECO && valor(p) != null && <p className="text-sm font-medium text-flora-700">{brl((valor(p) as number) * q)}{emPromocao(p) && <span className="ml-1 text-xs text-mel-600">{desconto(p)}% OFF</span>}</p>}
                   <div className="mt-1 flex items-center gap-2">
                     <button onClick={() => alterar(p.id, -1)} aria-label="Menos" className="rounded-full border border-areia-300 p-1 hover:bg-areia-100">
                       <Minus className="size-3.5" />

@@ -21,6 +21,9 @@ export type Produto = {
   codigo: string | null;
   nomeNoSistema: string | null;
   imagem: { site: string; siteJpg: string };
+  // vindos do painel (D1)
+  promo?: number | null;
+  oculto?: boolean;
 };
 
 export const produtos = dados as Produto[];
@@ -39,3 +42,9 @@ export const TIPOS: Record<string, string> = {
 export const GENEROS: Record<string, string> = { feminino: 'Feminino', masculino: 'Masculino', unissex: 'Unissex', infantil: 'Infantil' };
 
 export const brl = (v: number) => v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+// Preço efetivo: promocional só vale se for menor que o preço normal.
+export const emPromocao = (p: Produto) => p.preco != null && p.promo != null && p.promo < p.preco;
+export const valor = (p: Produto) => (emPromocao(p) ? (p.promo as number) : p.preco);
+// Percentual inteiro de desconto (sem casas decimais); 0 se arredondar para menos de 1%.
+export const desconto = (p: Produto) => (emPromocao(p) ? Math.round((1 - (p.promo as number) / (p.preco as number)) * 100) : 0);
