@@ -101,7 +101,7 @@ export default {
         if (r.descricao) a.descricao = r.descricao;
         out[r.id] = a;
       }
-      return json(out, 200, { 'cache-control': 'public, max-age=60' });
+      return json(out, 200, { 'cache-control': 'no-store' });
     }
 
     if (path.startsWith('/api/admin/')) {

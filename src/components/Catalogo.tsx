@@ -4,7 +4,7 @@ import { useMemo, useState } from 'react';
 import { Search } from 'lucide-react';
 import { GENEROS, TIPOS, type Produto } from '@/lib';
 import Preco from '@/components/Preco';
-import { DadosProvider, useProdutos } from '@/components/Dados';
+import { DadosProvider, useAjustesProntos, useProdutos } from '@/components/Dados';
 import { BotaoCarrinho, CarrinhoProvider, useCarrinho } from '@/components/Carrinho';
 
 function BotaoAdicionar({ id }: { id: string }) {
@@ -118,6 +118,7 @@ export default function Catalogo() {
 
 function Vitrine() {
   const todos = useProdutos();
+  const pronto = useAjustesProntos();
   const produtos = useMemo(() => todos.filter((p) => !p.oculto), [todos]);
   const [busca, setBusca] = useState('');
   const [tipo, setTipo] = useState('');
@@ -176,11 +177,12 @@ function Vitrine() {
         {lista.length} {lista.length === 1 ? 'item' : 'itens'}
       </p>
       <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-        {lista.map((p) => (
+        {!pronto && Array.from({ length: 8 }, (_, i) => <div key={i} className="aspect-[3/5] animate-pulse rounded-2xl bg-areia-100" />)}
+        {pronto && lista.map((p) => (
           <Cartao key={p.id} p={p} abrir={() => setAbertoId(p.id)} />
         ))}
       </div>
-      {lista.length === 0 && <p className="py-20 text-center text-tinta-suave">Nada encontrado.</p>}
+      {pronto && lista.length === 0 && <p className="py-20 text-center text-tinta-suave">Nada encontrado.</p>}
       {aberto && <Detalhe p={aberto} fechar={() => setAbertoId(null)} />}
     </main>
   );

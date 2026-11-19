@@ -9,17 +9,22 @@ type Ajuste = { preco?: number; promo?: number; oculto?: boolean; nome?: string;
 // Itens ocultos continuam na lista (com oculto: true) para o carrinho poder removê-los; a vitrine filtra.
 // Se a API falhar, o site continua com o catalogo.json.
 const Ctx = createContext<Produto[]>(base);
+const ProntoCtx = createContext(true);
 export const useProdutos = () => useContext(Ctx);
+// false até a API responder (ou falhar): evita mostrar preço antigo / item oculto por um instante
+export const useAjustesProntos = () => useContext(ProntoCtx);
 
 export function DadosProvider({ children }: { children: React.ReactNode }) {
   const [ajustes, setAjustes] = useState<Record<string, Ajuste>>({});
+  const [pronto, setPronto] = useState(false);
 
   useEffect(() => {
     let vivo = true;
-    fetch('/api/ajustes')
+    fetch('/api/ajustes', { cache: 'no-store' })
       .then((r) => (r.ok ? r.json() : {}))
       .then((d) => vivo && typeof d === 'object' && d && setAjustes(d as Record<string, Ajuste>))
-      .catch(() => {});
+      .catch(() => {})
+      .finally(() => vivo && setPronto(true));
     return () => {
       vivo = false;
     };
@@ -41,5 +46,9 @@ export function DadosProvider({ children }: { children: React.ReactNode }) {
       }),
     [ajustes],
   );
-  return <Ctx.Provider value={lista}>{children}</Ctx.Provider>;
+  return (
+    <ProntoCtx.Provider value={pronto}>
+      <Ctx.Provider value={lista}>{children}</Ctx.Provider>
+    </ProntoCtx.Provider>
+  );
 }
