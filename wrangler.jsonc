@@ -1,8 +1,18 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "flora-pura-campina",
+  "main": "worker/index.ts",
   "compatibility_date": "2026-11-18",
   "assets": {
-    "directory": "./out"
+    "directory": "./out",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  // Sem database_id: o wrangler cria o D1 sozinho no primeiro deploy.
+  "d1_databases": [{ "binding": "DB", "database_name": "flora-catalogo" }],
+  "vars": {
+    // Preencha depois de criar o app no Cloudflare Access (enquanto vazio, /api/admin fica fechado)
+    "ACCESS_TEAM_DOMAIN": "",
+    "ACCESS_AUD": ""
   }
 }

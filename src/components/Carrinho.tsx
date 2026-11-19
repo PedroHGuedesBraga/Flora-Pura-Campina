@@ -2,7 +2,8 @@
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { Minus, Plus, ShoppingBag, Trash2, X } from 'lucide-react';
-import { MOSTRAR_PRECO, TIPOS, brl, produtos, type Produto } from '@/lib';
+import { MOSTRAR_PRECO, TIPOS, brl, produtos as base, type Produto } from '@/lib';
+import { useProdutos } from '@/components/Dados';
 
 // Número da loja (formato wa.me: DDI + DDD + número, só dígitos)
 export const WHATSAPP_LOJA = '5583993786370';
@@ -37,7 +38,7 @@ export function CarrinhoProvider({ children }: { children: React.ReactNode }) {
     try {
       const salvo = JSON.parse(localStorage.getItem(CHAVE) || '{}') as Itens;
       const ok: Itens = {};
-      for (const [id, q] of Object.entries(salvo)) if (produtos.some((p) => p.id === id) && q > 0) ok[id] = Math.min(99, Math.floor(q));
+      for (const [id, q] of Object.entries(salvo)) if (base.some((p) => p.id === id) && q > 0) ok[id] = Math.min(99, Math.floor(q));
       setItens(ok);
     } catch {}
     setPronto(true);
@@ -99,9 +100,10 @@ function montarMensagem(linhas: { p: Produto; q: number }[]) {
 
 function Gaveta() {
   const { itens, total, alterar, remover, limpar, aberto, abrir } = useCarrinho();
+  const produtos = useProdutos();
   const linhas = useMemo(
     () => Object.entries(itens).flatMap(([id, q]) => { const p = produtos.find((x) => x.id === id); return p ? [{ p, q }] : []; }),
-    [itens],
+    [itens, produtos],
   );
   const soma = linhas.reduce((s, { p, q }) => s + (p.preco ?? 0) * q, 0);
   const link = `https://wa.me/${WHATSAPP_LOJA}?text=${encodeURIComponent(montarMensagem(linhas))}`;

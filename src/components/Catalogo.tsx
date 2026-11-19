@@ -2,7 +2,8 @@
 
 import { useMemo, useState } from 'react';
 import { Search } from 'lucide-react';
-import { GENEROS, MOSTRAR_PRECO, TIPOS, brl, produtos, type Produto } from '@/lib';
+import { GENEROS, MOSTRAR_PRECO, TIPOS, brl, type Produto } from '@/lib';
+import { DadosProvider, useProdutos } from '@/components/Dados';
 import { BotaoCarrinho, CarrinhoProvider, useCarrinho } from '@/components/Carrinho';
 
 function BotaoAdicionar({ id }: { id: string }) {
@@ -105,20 +106,24 @@ function Detalhe({ p, fechar }: { p: Produto; fechar: () => void }) {
 
 export default function Catalogo() {
   return (
-    <CarrinhoProvider>
-      <Vitrine />
-      <BotaoCarrinho />
-    </CarrinhoProvider>
+    <DadosProvider>
+      <CarrinhoProvider>
+        <Vitrine />
+        <BotaoCarrinho />
+      </CarrinhoProvider>
+    </DadosProvider>
   );
 }
 
 function Vitrine() {
+  const produtos = useProdutos();
   const [busca, setBusca] = useState('');
   const [tipo, setTipo] = useState('');
   const [genero, setGenero] = useState('');
-  const [aberto, setAberto] = useState<Produto | null>(null);
+  const [abertoId, setAbertoId] = useState<string | null>(null);
+  const aberto = produtos.find((p) => p.id === abertoId) ?? null;
 
-  const tipos = useMemo(() => Object.keys(TIPOS).filter((t) => produtos.some((p) => p.tipo === t)), []);
+  const tipos = useMemo(() => Object.keys(TIPOS).filter((t) => produtos.some((p) => p.tipo === t)), [produtos]);
   const lista = useMemo(() => {
     const q = norm(busca);
     return produtos.filter(
@@ -127,7 +132,7 @@ function Vitrine() {
         (!genero || p.genero === genero) &&
         (!q || norm(`${p.nome} ${p.linha ?? ''} ${p.notas.flatMap((n) => n.itens).join(' ')}`).includes(q)),
     );
-  }, [busca, tipo, genero]);
+  }, [produtos, busca, tipo, genero]);
 
   return (
     <main className="mx-auto max-w-7xl px-4 py-10 sm:px-6">
@@ -170,11 +175,11 @@ function Vitrine() {
       </p>
       <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
         {lista.map((p) => (
-          <Cartao key={p.id} p={p} abrir={() => setAberto(p)} />
+          <Cartao key={p.id} p={p} abrir={() => setAbertoId(p.id)} />
         ))}
       </div>
       {lista.length === 0 && <p className="py-20 text-center text-tinta-suave">Nada encontrado.</p>}
-      {aberto && <Detalhe p={aberto} fechar={() => setAberto(null)} />}
+      {aberto && <Detalhe p={aberto} fechar={() => setAbertoId(null)} />}
     </main>
   );
 }
