@@ -20,7 +20,7 @@ export function DadosProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     let vivo = true;
-    fetch('/api/ajustes', { cache: 'no-store' })
+    fetch('/api/ajustes')
       .then((r) => (r.ok ? r.json() : {}))
       .then((d) => vivo && typeof d === 'object' && d && setAjustes(d as Record<string, Ajuste>))
       .catch(() => {})
