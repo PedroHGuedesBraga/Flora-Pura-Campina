@@ -5,7 +5,7 @@ import { Minus, Plus, ShoppingBag, Trash2, X } from 'lucide-react';
 import { MOSTRAR_PRECO, TIPOS, brl, produtos, type Produto } from '@/lib';
 
 // Número da loja (formato wa.me: DDI + DDD + número, só dígitos)
-export const WHATSAPP_LOJA = '558393786370';
+export const WHATSAPP_LOJA = '5583993786370';
 const CHAVE = 'flora-carrinho-v1';
 
 type Itens = Record<string, number>;
