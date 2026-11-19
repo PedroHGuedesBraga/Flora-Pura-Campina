@@ -1,0 +1,3814 @@
+[
+  {
+    "id": "1949-blue",
+    "nome": "1949 Blue",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "masculino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · POUR HOMME · 100 ML",
+    "descricao": "Mais do que uma fragrância: uma jornada que transcende o tempo e o espaço, com sofisticação e intensidade contemporâneas.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#e0b06a",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Hortelã",
+          "Pimenta Rosa"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Gengibre",
+          "Noz-Moscada",
+          "Jasmim"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Vetiver",
+          "Cedro",
+          "Sândalo",
+          "Patchouli"
+        ]
+      }
+    ],
+    "preco": 257.31,
+    "disponivel": true,
+    "codigo": "FP-0691",
+    "nomeNoSistema": "PERFUME 1949 BLUE - MASCULINO",
+    "imagem": {
+      "site": "/produtos/1949-blue.webp",
+      "siteJpg": "/produtos/1949-blue.jpg"
+    }
+  },
+  {
+    "id": "1949-reserva-especial",
+    "nome": "1949 Reserva Especial",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "masculino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · MASCULINO · 100 ML",
+    "descricao": "Inspirada na década de criação da Flora Pura: um amadeirado com envolvente toque de especiarias, fresco e picante, para qualquer ocasião.",
+    "familiaOlfativa": "Amadeirado Especiado",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#93baba",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Limão Siciliano",
+          "Gengibre"
+        ]
+      },
+      {
+        "nivel": "COM",
+        "legenda": "na composição",
+        "itens": [
+          "Cardamomo",
+          "Fava Tonka",
+          "Vetiver"
+        ]
+      }
+    ],
+    "preco": 217.71,
+    "disponivel": true,
+    "codigo": "FP-0690",
+    "nomeNoSistema": "PERFUME RESERVA ESPECIAL 1949 - MASCULINO",
+    "imagem": {
+      "site": "/produtos/1949-reserva-especial.webp",
+      "siteJpg": "/produtos/1949-reserva-especial.jpg"
+    }
+  },
+  {
+    "id": "agua-de-colonia-lavanda-200ml-vegetal-do-brasil",
+    "nome": "Água de Colônia Lavanda Vegetal do Brasil",
+    "categoria": "perfume",
+    "tipo": "colonia",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 200,
+    "subtitulo": "VEGETAL DO BRASIL · 200 ML",
+    "descricao": "Descubra a sensação de frescor e bem-estar com a Água de Colônia Lavanda 200ml Vegetal do Brasil.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#d6d0e9",
+    "notas": [
+      {
+        "nivel": "DESTAQUES",
+        "legenda": "em resumo",
+        "itens": [
+          "Fragrância natural e suave de lavanda",
+          "Aplicação prática com vaporizador spray",
+          "Sensação de frescor e bem-estar prolongada"
+        ]
+      }
+    ],
+    "preco": 72.81,
+    "disponivel": true,
+    "codigo": "FP-0201",
+    "nomeNoSistema": "EAU DE COLOGNE LAVANDA",
+    "imagem": {
+      "site": "/produtos/agua-de-colonia-lavanda-200ml-vegetal-do-brasil.webp",
+      "siteJpg": "/produtos/agua-de-colonia-lavanda-200ml-vegetal-do-brasil.jpg"
+    }
+  },
+  {
+    "id": "ambiance",
+    "nome": "Ambiance",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · POUR FEMME · 100 ML",
+    "descricao": "Marcante como um raio de sol que desponta no horizonte ao amanhecer: uma fragrância que celebra a mulher autodeterminada e radiante, e deixa sua presença por onde passa.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": "PRÊMIO COSMÉTICA 2022",
+    "cor": "#ff9f5e",
+    "notas": [],
+    "preco": 227.61,
+    "disponivel": true,
+    "codigo": "7908572200060",
+    "nomeNoSistema": "PERFUME AMBIANCE FEMININO",
+    "imagem": {
+      "site": "/produtos/ambiance.webp",
+      "siteJpg": "/produtos/ambiance.jpg"
+    }
+  },
+  {
+    "id": "apolo",
+    "nome": "Apolo",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "masculino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · POUR HOMME · 100 ML",
+    "descricao": "Captura a essência da masculinidade e o frescor vibrante da natureza, numa explosão de energia revigorante com vivacidade e vitalidade.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#f4a47c",
+    "notas": [
+      {
+        "nivel": "TOPO",
+        "legenda": "a explosão de energia",
+        "itens": [
+          "Limão",
+          "Menta",
+          "Anis",
+          "Maçã"
+        ]
+      }
+    ],
+    "preco": 217.71,
+    "disponivel": true,
+    "codigo": "7908572201951",
+    "nomeNoSistema": "PERFUME APOLO - MASCULINO",
+    "imagem": {
+      "site": "/produtos/apolo.webp",
+      "siteJpg": "/produtos/apolo.jpg"
+    }
+  },
+  {
+    "id": "belle",
+    "nome": "Belle",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 75,
+    "subtitulo": "EAU DE PARFUM · POUR FEMME · 75 ML",
+    "descricao": "Delicadeza e feminilidade em um floral suave e envolvente, com abertura frutada e fundo macio de musk e sândalo.",
+    "familiaOlfativa": "Floral Musk",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#ff7fb0",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Bergamota",
+          "Laranja Bigaradea",
+          "Mandarina",
+          "Pera",
+          "Maçã"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Ylang Ylang",
+          "Rosa",
+          "Jasmim do Egito",
+          "Violeta",
+          "Pêssego"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Musk",
+          "Sândalo"
+        ]
+      }
+    ],
+    "preco": 237.51,
+    "disponivel": true,
+    "codigo": "FP-0698",
+    "nomeNoSistema": "PERFUME BELLE - FEMININO",
+    "imagem": {
+      "site": "/produtos/belle.webp",
+      "siteJpg": "/produtos/belle.jpg"
+    }
+  },
+  {
+    "id": "colonia-acqua-fresca-200-ml",
+    "nome": "Colônia acqua fresca",
+    "categoria": "perfume",
+    "tipo": "colonia",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 200,
+    "subtitulo": "PERFUMARIA · 200 ML",
+    "descricao": "Linha flora pura eau de cologne é indicada para ser usada por todo o corpo, pois perfume de forma suave, prolongando o efeito de bem-estar e frescor após o banho. Perfeito para qualquer hora do dia, inclusive antes de dormir.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#bfaba2",
+    "notas": [],
+    "preco": 72.81,
+    "disponivel": true,
+    "codigo": "FP-0195",
+    "nomeNoSistema": "EAU DE COLOGNE ACQUA FRESCA",
+    "imagem": {
+      "site": "/produtos/colonia-acqua-fresca-200-ml.webp",
+      "siteJpg": "/produtos/colonia-acqua-fresca-200-ml.jpg"
+    }
+  },
+  {
+    "id": "colonia-alfazema-200-ml",
+    "nome": "Colônia alfazema",
+    "categoria": "perfume",
+    "tipo": "colonia",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 200,
+    "subtitulo": "PERFUMARIA · 200 ML",
+    "descricao": "Linha flora pura eau de cologne é indicada para ser usada por todo o corpo, pois perfume de forma suave, prolongando o efeito de bem-estar e frescor após o banho. Perfeito para qualquer hora do dia, inclusive antes de dormir.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#bfb0a6",
+    "notas": [],
+    "preco": 72.8,
+    "disponivel": true,
+    "codigo": "7898612642182",
+    "nomeNoSistema": "EAU DE COLOGNE ALFAZEMA",
+    "imagem": {
+      "site": "/produtos/colonia-alfazema-200-ml.webp",
+      "siteJpg": "/produtos/colonia-alfazema-200-ml.jpg"
+    }
+  },
+  {
+    "id": "colonia-bamboo-200-ml",
+    "nome": "Colônia bamboo",
+    "categoria": "perfume",
+    "tipo": "colonia",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 200,
+    "subtitulo": "PERFUMARIA · 200 ML",
+    "descricao": "Linha flora pura eau de cologne é indicada para ser usada por todo o corpo, pois perfume de forma suave, prolongando o efeito de bem-estar e frescor após o banho. Perfeito para qualquer hora do dia, inclusive antes de dormir.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#bfb8ac",
+    "notas": [],
+    "preco": 72.81,
+    "disponivel": true,
+    "codigo": "7898612642489",
+    "nomeNoSistema": "EAU DE COLOGNE BAMBOO",
+    "imagem": {
+      "site": "/produtos/colonia-bamboo-200-ml.webp",
+      "siteJpg": "/produtos/colonia-bamboo-200-ml.jpg"
+    }
+  },
+  {
+    "id": "colonia-flor-de-laranjeira-200-ml",
+    "nome": "Colônia flor de laranjeira",
+    "categoria": "perfume",
+    "tipo": "colonia",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 200,
+    "subtitulo": "PERFUMARIA · 200 ML",
+    "descricao": "Linha flora pura eau de cologne é indicada para ser usada por todo o corpo, pois perfume de forma suave, prolongando o efeito de bem-estar e frescor após o banho. Perfeito para qualquer hora do dia, inclusive antes de dormir.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#bfaea3",
+    "notas": [],
+    "preco": 72.81,
+    "disponivel": true,
+    "codigo": "7898612642526",
+    "nomeNoSistema": "EAU DE COLOGNE FLOR DE LARANJEIRA",
+    "imagem": {
+      "site": "/produtos/colonia-flor-de-laranjeira-200-ml.webp",
+      "siteJpg": "/produtos/colonia-flor-de-laranjeira-200-ml.jpg"
+    }
+  },
+  {
+    "id": "colonia-frutal-banana-120ml-flora-pura",
+    "nome": "Colonia Frutal Banana",
+    "categoria": "perfume",
+    "tipo": "colonia",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 120,
+    "subtitulo": "PERFUMARIA · 120 ML",
+    "descricao": "Descubra a Colônia Frutal Banana 120ml Flora Pura, uma fragrância exclusiva que traz toda a leveza e frescor das frutas tropicais para o seu dia a dia.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#e7d086",
+    "notas": [],
+    "preco": 91.71,
+    "disponivel": true,
+    "codigo": "FP-0022",
+    "nomeNoSistema": "ÁGUA DE COLONIA BANANA(FRUTAS DA FLORA TROPICAL",
+    "imagem": {
+      "site": "/produtos/colonia-frutal-banana-120ml-flora-pura.webp",
+      "siteJpg": "/produtos/colonia-frutal-banana-120ml-flora-pura.jpg"
+    }
+  },
+  {
+    "id": "colonia-frutal-cereja-120ml-flora-pura",
+    "nome": "Colonia Frutal Cereja",
+    "categoria": "perfume",
+    "tipo": "colonia",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 120,
+    "subtitulo": "PERFUMARIA · 120 ML",
+    "descricao": "Descubra a Colônia Frutal Cereja 120ml Flora Pura, uma fragrância vibrante que celebra a doçura e frescor das frutas tropicais.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#e09b9c",
+    "notas": [
+      {
+        "nivel": "DESTAQUES",
+        "legenda": "em resumo",
+        "itens": [
+          "Fragrância frutal com toque floral",
+          "Notas de saída frescas e vibrantes",
+          "Indicado para uso diário e variados momentos",
+          "Volume: 120ml, fácil aplicação com spray"
+        ]
+      }
+    ],
+    "preco": 91.71,
+    "disponivel": true,
+    "codigo": "FP-0014",
+    "nomeNoSistema": "AGUA DE COLONIA CEREJA",
+    "imagem": {
+      "site": "/produtos/colonia-frutal-cereja-120ml-flora-pura.webp",
+      "siteJpg": "/produtos/colonia-frutal-cereja-120ml-flora-pura.jpg"
+    }
+  },
+  {
+    "id": "colonia-frutal-framboesa-120ml-flora-pura",
+    "nome": "Colonia Frutal Framboesa",
+    "categoria": "perfume",
+    "tipo": "colonia",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 120,
+    "subtitulo": "PERFUMARIA · 120 ML",
+    "descricao": "Colônia Frutal Framboesa 120ml Flora Pura: uma fragrância envolvente que traz a essência vibrante dos frutos tropicais.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#e4adaa",
+    "notas": [
+      {
+        "nivel": "DESTAQUES",
+        "legenda": "em resumo",
+        "itens": [
+          "Essências exclusivas de frutos tropicais",
+          "Spray prático e fácil aplicação",
+          "Adequado para todos os tipos de pele",
+          "Volume de 120ml para uso prolongado"
+        ]
+      }
+    ],
+    "preco": 91.71,
+    "disponivel": true,
+    "codigo": "FP-0015",
+    "nomeNoSistema": "AGUA DE COLONIA FRAMBOESA",
+    "imagem": {
+      "site": "/produtos/colonia-frutal-framboesa-120ml-flora-pura.webp",
+      "siteJpg": "/produtos/colonia-frutal-framboesa-120ml-flora-pura.jpg"
+    }
+  },
+  {
+    "id": "colonia-frutal-melancia-120ml-vegetal-do-brasil-linha-cheiro-de-frutas",
+    "nome": "Colonia Frutal Melancia Vegetal do Brasil - Linha Cheiro de Frutas",
+    "categoria": "perfume",
+    "tipo": "colonia",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 120,
+    "subtitulo": "PERFUMARIA · 120 ML",
+    "descricao": "Desfrute da frescura e do aroma irresistível da Colônia Frutal Melancia 120ml Vegetal do Brasil, parte da exclusiva Linha Cheiro de Frutas.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#e9bcb8",
+    "notas": [],
+    "preco": null,
+    "disponivel": null,
+    "codigo": null,
+    "nomeNoSistema": null,
+    "imagem": {
+      "site": "/produtos/colonia-frutal-melancia-120ml-vegetal-do-brasil-linha-cheiro-de-frutas.webp",
+      "siteJpg": "/produtos/colonia-frutal-melancia-120ml-vegetal-do-brasil-linha-cheiro-de-frutas.jpg"
+    }
+  },
+  {
+    "id": "colonia-frutal-morango-120-ml",
+    "nome": "Colônia frutal morango",
+    "categoria": "perfume",
+    "tipo": "colonia",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 120,
+    "subtitulo": "PERFUMARIA · 120 ML",
+    "descricao": "Água de colônia floral frutal com a saida das frutas, maçã, romã e pêssego, combinados com a delicadeza do osmanthus e floralidade vibrante do lírio do vale, finalizada com o fundo envolvente de musk…",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#ddbfa8",
+    "notas": [],
+    "preco": 91.71,
+    "disponivel": true,
+    "codigo": "FP-0021",
+    "nomeNoSistema": "ÁGUA DE COLONIA MORANGO",
+    "imagem": {
+      "site": "/produtos/colonia-frutal-morango-120-ml.webp",
+      "siteJpg": "/produtos/colonia-frutal-morango-120-ml.jpg"
+    }
+  },
+  {
+    "id": "colonia-frutal-pitanga-120-ml",
+    "nome": "Colônia frutal pitanga",
+    "categoria": "perfume",
+    "tipo": "colonia",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 120,
+    "subtitulo": "PERFUMARIA · 120 ML",
+    "descricao": "Água de colônia frutada floral com a saída das frutas exóticas combinadas com as folhas de pitanga e a cremosidade do ruibarbo, trazendo muita personalidade através da rosa e do fundo das madeiras como tabaco.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#dfb99d",
+    "notas": [],
+    "preco": 91.71,
+    "disponivel": true,
+    "codigo": "FP-0016",
+    "nomeNoSistema": "ÁGUA DE COLONIA PITANGA",
+    "imagem": {
+      "site": "/produtos/colonia-frutal-pitanga-120-ml.webp",
+      "siteJpg": "/produtos/colonia-frutal-pitanga-120-ml.jpg"
+    }
+  },
+  {
+    "id": "colonia-frutal-seriguela-120ml-flora-pura",
+    "nome": "Colônia Frutal Seriguela",
+    "categoria": "perfume",
+    "tipo": "colonia",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 120,
+    "subtitulo": "PERFUMARIA · 120 ML",
+    "descricao": "Colônia Frutal Seriguela 120ml Flora Pura: fragrância vibrante e refrescante ideal para quem busca um aroma natural e envolvente.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#dac4a8",
+    "notas": [],
+    "preco": 91.71,
+    "disponivel": true,
+    "codigo": "FP-0020",
+    "nomeNoSistema": "ÁGUA DE COLONIA SERIGUELA",
+    "imagem": {
+      "site": "/produtos/colonia-frutal-seriguela-120ml-flora-pura.webp",
+      "siteJpg": "/produtos/colonia-frutal-seriguela-120ml-flora-pura.jpg"
+    }
+  },
+  {
+    "id": "colonia-infantil-flora-baby-flora-pura",
+    "nome": "Colônia Infantil Flora Baby",
+    "categoria": "perfume",
+    "tipo": "colonia",
+    "linha": "Flora Baby",
+    "genero": "infantil",
+    "volumeMl": null,
+    "subtitulo": "INFANTIL",
+    "descricao": "Descubra a Colônia Infantil Flora Baby Flora Pura, especialmente desenvolvida para crianças que merecem cuidados delicados.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#d7e7e9",
+    "notas": [],
+    "preco": 99.0,
+    "disponivel": true,
+    "codigo": "FP-0090",
+    "nomeNoSistema": "COLONIA FLORA BABY LAVANDA",
+    "imagem": {
+      "site": "/produtos/colonia-infantil-flora-baby-flora-pura.webp",
+      "siteJpg": "/produtos/colonia-infantil-flora-baby-flora-pura.jpg"
+    }
+  },
+  {
+    "id": "colonia-infantil-petit",
+    "nome": "Colônia infantil Petit",
+    "categoria": "perfume",
+    "tipo": "colonia",
+    "linha": "Infantil Baby",
+    "genero": "infantil",
+    "volumeMl": null,
+    "subtitulo": "INFANTIL",
+    "descricao": "Delicada e encantadora, Flora Baby Petit é uma colônia infantil criada para acompanhar as primeiras venturas e momentos especiais das crianças.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#ddd4c1",
+    "notas": [],
+    "preco": 108.0,
+    "disponivel": true,
+    "codigo": "7908572204136",
+    "nomeNoSistema": "COLONIA FLORA BABY PETIT",
+    "imagem": {
+      "site": "/produtos/colonia-infantil-petit.webp",
+      "siteJpg": "/produtos/colonia-infantil-petit.jpg"
+    }
+  },
+  {
+    "id": "colonia-jasmim-200-ml",
+    "nome": "Colônia jasmim",
+    "categoria": "perfume",
+    "tipo": "colonia",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 200,
+    "subtitulo": "PERFUMARIA · 200 ML",
+    "descricao": "Linha flora pura eau de cologne é indicada para ser usada por todo o corpo, pois perfume de forma suave, prolongando o efeito de bem-estar e frescor após o banho. Perfeito para qualquer hora do dia, inclusive antes de dormir.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#bfada2",
+    "notas": [],
+    "preco": 72.81,
+    "disponivel": true,
+    "codigo": "7898612643240",
+    "nomeNoSistema": "EAU DE COLOGNE JASMIM",
+    "imagem": {
+      "site": "/produtos/colonia-jasmim-200-ml.webp",
+      "siteJpg": "/produtos/colonia-jasmim-200-ml.jpg"
+    }
+  },
+  {
+    "id": "colonia-patchouli-200-ml",
+    "nome": "Colônia patchouli",
+    "categoria": "perfume",
+    "tipo": "colonia",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 200,
+    "subtitulo": "PERFUMARIA · 200 ML",
+    "descricao": "Linha flora pura eau de cologne é indicada para ser usada por todo o corpo, pois perfume de forma suave, prolongando o efeito de bem-estar e frescor após o banho. Perfeito para qualquer hora do dia, inclusive antes de dormir.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#bfaba2",
+    "notas": [],
+    "preco": 72.81,
+    "disponivel": true,
+    "codigo": "FP-0193",
+    "nomeNoSistema": "EAU DE COLOGNE PATCHOULI",
+    "imagem": {
+      "site": "/produtos/colonia-patchouli-200-ml.webp",
+      "siteJpg": "/produtos/colonia-patchouli-200-ml.jpg"
+    }
+  },
+  {
+    "id": "colonia-verbena-200-ml",
+    "nome": "Colônia verbena",
+    "categoria": "perfume",
+    "tipo": "colonia",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 200,
+    "subtitulo": "PERFUMARIA · 200 ML",
+    "descricao": "Linha flora pura eau de cologne é indicada para ser usada por todo o corpo, pois perfume de forma suave, prolongando o efeito de bem-estar e frescor após o banho. Perfeito para qualquer hora do dia, inclusive antes de dormir.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#bfa9a3",
+    "notas": [],
+    "preco": 72.81,
+    "disponivel": true,
+    "codigo": "FP-0199",
+    "nomeNoSistema": "EAU DE COLOGNE VERBENA",
+    "imagem": {
+      "site": "/produtos/colonia-verbena-200-ml.webp",
+      "siteJpg": "/produtos/colonia-verbena-200-ml.jpg"
+    }
+  },
+  {
+    "id": "colonia-vetiver-200-ml",
+    "nome": "Colônia vetiver",
+    "categoria": "perfume",
+    "tipo": "colonia",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 200,
+    "subtitulo": "PERFUMARIA · 200 ML",
+    "descricao": "Linha flora pura eau de cologne é indicada para ser usada por todo o corpo, pois perfume de forma suave, prolongando o efeito de bem-estar e frescor após o banho. Perfeito para qualquer hora do dia, inclusive antes de dormir.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#bfaba0",
+    "notas": [],
+    "preco": 72.81,
+    "disponivel": true,
+    "codigo": "FP-0198",
+    "nomeNoSistema": "EAU DE COLOGNE VETIVER",
+    "imagem": {
+      "site": "/produtos/colonia-vetiver-200-ml.webp",
+      "siteJpg": "/produtos/colonia-vetiver-200-ml.jpg"
+    }
+  },
+  {
+    "id": "dany",
+    "nome": "Dany",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · FEMININO · 100 ML",
+    "descricao": "A perfeita união entre o simples e o sofisticado, para as mulheres que sabem aproveitar todos os momentos da vida e viver o aqui e agora.",
+    "familiaOlfativa": "Chypre Floral",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#f1c588",
+    "notas": [
+      {
+        "nivel": "CABEÇA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Tangerina",
+          "Framboesa",
+          "Pimenta Rosa"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Frésia",
+          "Rosas",
+          "Ylang-Ylang"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Baunilha",
+          "Cedro",
+          "Patchouli",
+          "Musk"
+        ]
+      }
+    ],
+    "preco": 253.5,
+    "disponivel": true,
+    "codigo": "FP-0667",
+    "nomeNoSistema": "PERFUME DANY - FEMININO",
+    "imagem": {
+      "site": "/produtos/dany.webp",
+      "siteJpg": "/produtos/dany.jpg"
+    }
+  },
+  {
+    "id": "deo-colonia-cabra-arretado-130-ml",
+    "nome": "Deo colônia cabra arretado",
+    "categoria": "perfume",
+    "tipo": "deo-colonia",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 130,
+    "subtitulo": "PERFUMARIA · 130 ML",
+    "descricao": "A Deo Colônia Cabra Arretado vem com essência cítrica aromática composta por notas iniciais de lima, limão, sálvia, cravo, canela e notas de fundo musk, cedro, vetiver, sândalo e patchuli…",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#bfae97",
+    "notas": [],
+    "preco": 69.21,
+    "disponivel": true,
+    "codigo": "FP-0184",
+    "nomeNoSistema": "DEO COLONIA CABRA ARRETADO",
+    "imagem": {
+      "site": "/produtos/deo-colonia-cabra-arretado-130-ml.webp",
+      "siteJpg": "/produtos/deo-colonia-cabra-arretado-130-ml.jpg"
+    }
+  },
+  {
+    "id": "deo-parfum-ja-flore",
+    "nome": "Já Flore",
+    "categoria": "perfume",
+    "tipo": "deo-parfum",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 50,
+    "subtitulo": "DEO PARFUM · FEMININO · 50 ML",
+    "descricao": "Frescor floral delicado no topo, coração envolvente de jasmim e rosa e fundo amadeirado que perdura na pele.",
+    "familiaOlfativa": "Floral",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#f1c5d0",
+    "notas": [
+      {
+        "nivel": "TOPO",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Frescor Floral"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Jasmim",
+          "Rosa"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Notas Amadeiradas"
+        ]
+      }
+    ],
+    "preco": 77.31,
+    "disponivel": true,
+    "codigo": "FP-0186",
+    "nomeNoSistema": "DEO PARFUM - JÁ FLORE",
+    "imagem": {
+      "site": "/produtos/deo-parfum-ja-flore.webp",
+      "siteJpg": "/produtos/deo-parfum-ja-flore.jpg"
+    }
+  },
+  {
+    "id": "deo-parfum-red-love",
+    "nome": "Red Love",
+    "categoria": "perfume",
+    "tipo": "deo-parfum",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 50,
+    "subtitulo": "DEO PARFUM · FEMININO · 50 ML",
+    "descricao": "Combinação irresistível de topo cítrico e frutado, coração floral de rosa e peônia e fundo de âmbar e baunilha.",
+    "familiaOlfativa": "Floral Frutal",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#f6afba",
+    "notas": [
+      {
+        "nivel": "TOPO",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Notas Cítricas",
+          "Notas Frutadas"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Rosa",
+          "Peônia"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Âmbar",
+          "Baunilha"
+        ]
+      }
+    ],
+    "preco": 77.31,
+    "disponivel": true,
+    "codigo": "FP-0185",
+    "nomeNoSistema": "DEO PARFUM - RED LOVE",
+    "imagem": {
+      "site": "/produtos/deo-parfum-red-love.webp",
+      "siteJpg": "/produtos/deo-parfum-red-love.jpg"
+    }
+  },
+  {
+    "id": "deo-parfum-sky-blue",
+    "nome": "Sky Blue",
+    "categoria": "perfume",
+    "tipo": "deo-parfum",
+    "linha": null,
+    "genero": "masculino",
+    "volumeMl": 50,
+    "subtitulo": "DEO PARFUM · MASCULINO · 50 ML",
+    "descricao": "Explosão de frescor desde a primeira aplicação: bergamota e limão, lavanda e alecrim, e fundo amadeirado e almiscarado.",
+    "familiaOlfativa": "Cítrica Aromática",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#a4caeb",
+    "notas": [
+      {
+        "nivel": "TOPO",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Bergamota",
+          "Limão"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Lavanda",
+          "Alecrim"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Madeiras",
+          "Almiscarado"
+        ]
+      }
+    ],
+    "preco": 77.31,
+    "disponivel": true,
+    "codigo": "7898612649594",
+    "nomeNoSistema": "DEO PARFUM - SKY BLUE",
+    "imagem": {
+      "site": "/produtos/deo-parfum-sky-blue.webp",
+      "siteJpg": "/produtos/deo-parfum-sky-blue.jpg"
+    }
+  },
+  {
+    "id": "divine-essence",
+    "nome": "Divine Essence",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · FEMININO · 100 ML",
+    "descricao": "Fragrância feminina sofisticada, marcante e duradoura, para destacar a sua presença em qualquer ocasião.",
+    "familiaOlfativa": "Oriental Fougère",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#db8388",
+    "notas": [
+      {
+        "nivel": "CABEÇA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Pitaya",
+          "Bergamota"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Peônia Vermelha",
+          "Frangipani"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Baunilha",
+          "Patchouli"
+        ]
+      }
+    ],
+    "preco": 295.9,
+    "disponivel": true,
+    "codigo": "7908572205171",
+    "nomeNoSistema": "PERFUME DIVINE -FEMININO",
+    "imagem": {
+      "site": "/produtos/divine-essence.webp",
+      "siteJpg": "/produtos/divine-essence.jpg"
+    }
+  },
+  {
+    "id": "dom",
+    "nome": "Dom",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "masculino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · POUR HOMME · 100 ML",
+    "descricao": "Um perfume diferenciado, que mescla notas cítricas e aromáticas numa combinação clássica, arrojada e cheia de energia.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#f2a23a",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Bergamota da Calábria",
+          "Pimenta"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Alecrim",
+          "Néroli"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Vetiver",
+          "Fava Tonka"
+        ]
+      }
+    ],
+    "preco": 248.31,
+    "disponivel": true,
+    "codigo": "7908572200473",
+    "nomeNoSistema": "PERFUME DOM - MASCULINO",
+    "imagem": {
+      "site": "/produtos/dom.webp",
+      "siteJpg": "/produtos/dom.jpg"
+    }
+  },
+  {
+    "id": "dulce-romance-delicate-woman",
+    "nome": "Dulce Romance",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · DELICATE WOMAN · 100 ML",
+    "descricao": "Encantador e sedutor: força, singularidade e magnetismo. Limão Siciliano, Jasmim e Peônia numa composição exuberante, com o Sândalo trazendo suavidade e o Patchouli, mistério.",
+    "familiaOlfativa": "Floral Amadeirado",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#ffc83a",
+    "notas": [
+      {
+        "nivel": "TOPO",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Limão Siciliano",
+          "Romã",
+          "Bergamota"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Jasmim",
+          "Peônia",
+          "Pêssego",
+          "Rosa"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Musc",
+          "Sândalo",
+          "Patchouli",
+          "Âmbar"
+        ]
+      }
+    ],
+    "preco": 248.31,
+    "disponivel": true,
+    "codigo": "7908572203368",
+    "nomeNoSistema": "PERFUME DULCE ROMANCE - DELICATE WOMAN",
+    "imagem": {
+      "site": "/produtos/dulce-romance-delicate-woman.webp",
+      "siteJpg": "/produtos/dulce-romance-delicate-woman.jpg"
+    }
+  },
+  {
+    "id": "dulce-romance-pour-homme",
+    "nome": "Dulce Romance",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "masculino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · POUR HOMME · 100 ML",
+    "descricao": "Uma aura de sofisticação e mistério, que personifica a elegância e a seriedade do homem moderno e sedutor. Do frescor da Sálvia à profundidade picante da Noz-Moscada.",
+    "familiaOlfativa": "Amadeirado Floral",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#9fb0ff",
+    "notas": [
+      {
+        "nivel": "TOPO",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Bergamota",
+          "Maçã",
+          "Limão Siciliano"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Folhas Verdes",
+          "Gengibre",
+          "Lavanda",
+          "Violeta",
+          "Sálvia",
+          "Noz-Moscada"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Baunilha",
+          "Musk",
+          "Cashmere",
+          "Incenso",
+          "Sândalo",
+          "Labdano"
+        ]
+      }
+    ],
+    "preco": 248.31,
+    "disponivel": true,
+    "codigo": "FP-0702",
+    "nomeNoSistema": "PERFUME DULCE ROMANCE - POUR HOMME",
+    "imagem": {
+      "site": "/produtos/dulce-romance-pour-homme.webp",
+      "siteJpg": "/produtos/dulce-romance-pour-homme.jpg"
+    }
+  },
+  {
+    "id": "especial-man",
+    "nome": "Especial Man",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "masculino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · MASCULINO · 100 ML",
+    "descricao": "Um perfume diferenciado, único e surpreendente, com a sutileza da fava tonka, o cacau e a vitalidade cítrica da bergamota verde da Itália.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#afd0e0",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Fava Tonka",
+          "Cacau",
+          "Bergamota Verde"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Pimenta Preta",
+          "Pimenta Branca"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Cedro",
+          "Musgo",
+          "Âmbar"
+        ]
+      }
+    ],
+    "preco": 251.91,
+    "disponivel": true,
+    "codigo": "FP-0695",
+    "nomeNoSistema": "PERFUME ESPECIAL MAN MASCULINO",
+    "imagem": {
+      "site": "/produtos/especial-man.webp",
+      "siteJpg": "/produtos/especial-man.jpg"
+    }
+  },
+  {
+    "id": "especial-woman",
+    "nome": "Especial Woman",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · FEMININO · 100 ML",
+    "descricao": "Fresco, alegre e primaveril: pétalas de rosas turcas com jasmim indiano, lírio do vale e rosa de maio, e fundo de musk branco e baunilha.",
+    "familiaOlfativa": "Chypre Floral Clean",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#d0bfe6",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Pêra",
+          "Cassis",
+          "Bergamota"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Rosa Turca",
+          "Jasmim Indiano",
+          "Lírio do Vale",
+          "Rosa de Maio"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Musk Branco",
+          "Baunilha"
+        ]
+      }
+    ],
+    "preco": 251.91,
+    "disponivel": true,
+    "codigo": "FP-0694",
+    "nomeNoSistema": "PERFUME ESPECIAL WOMAN FEMININO",
+    "imagem": {
+      "site": "/produtos/especial-woman.webp",
+      "siteJpg": "/produtos/especial-woman.jpg"
+    }
+  },
+  {
+    "id": "flaconete-colonia-flora-baby-petit-5ml",
+    "nome": "Flaconete Colonia Flora Baby Petit",
+    "categoria": "perfume",
+    "tipo": "flaconete",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 5,
+    "subtitulo": "PERFUMARIA · 5 ML",
+    "descricao": "Produto da linha Perfumaria da Flora Pura.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#e9dac3",
+    "notas": [],
+    "preco": null,
+    "disponivel": null,
+    "codigo": null,
+    "nomeNoSistema": null,
+    "imagem": {
+      "site": "/produtos/flaconete-colonia-flora-baby-petit-5ml.webp",
+      "siteJpg": "/produtos/flaconete-colonia-flora-baby-petit-5ml.jpg"
+    }
+  },
+  {
+    "id": "flaconete-colonia-frutal-ameixa-5ml-f-p",
+    "nome": "Flaconete Colonia Frutal Ameixa F-p",
+    "categoria": "perfume",
+    "tipo": "flaconete",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 5,
+    "subtitulo": "PERFUMARIA · 5 ML",
+    "descricao": "Produto da linha Perfumaria da Flora Pura.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#e9dac3",
+    "notas": [],
+    "preco": null,
+    "disponivel": null,
+    "codigo": null,
+    "nomeNoSistema": null,
+    "imagem": {
+      "site": "/produtos/flaconete-colonia-frutal-ameixa-5ml-f-p.webp",
+      "siteJpg": "/produtos/flaconete-colonia-frutal-ameixa-5ml-f-p.jpg"
+    }
+  },
+  {
+    "id": "flaconete-colonia-frutal-seriguela-5ml",
+    "nome": "Flaconete Colonia Frutal Seriguela",
+    "categoria": "perfume",
+    "tipo": "flaconete",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 5,
+    "subtitulo": "PERFUMARIA · 5 ML",
+    "descricao": "Produto da linha Perfumaria da Flora Pura.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#e9d9c1",
+    "notas": [],
+    "preco": null,
+    "disponivel": null,
+    "codigo": null,
+    "nomeNoSistema": null,
+    "imagem": {
+      "site": "/produtos/flaconete-colonia-frutal-seriguela-5ml.webp",
+      "siteJpg": "/produtos/flaconete-colonia-frutal-seriguela-5ml.jpg"
+    }
+  },
+  {
+    "id": "flor-de-lis",
+    "nome": "Flor de Lis",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 60,
+    "subtitulo": "EAU DE PARFUM · FEMININO · 60 ML",
+    "descricao": "Uma floral sensorial inspirada na natureza, que celebra a mulher e a beleza, com menta, frutas cítricas, jasmim e peônias.",
+    "familiaOlfativa": "Floral",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#9edbc5",
+    "notas": [
+      {
+        "nivel": "NOTAS",
+        "legenda": "composição",
+        "itens": [
+          "Menta",
+          "Frutas Cítricas",
+          "Jasmim",
+          "Peônia",
+          "Pimenta Rosa",
+          "Flor de Lis",
+          "Cedro",
+          "Açúcar Mascavo"
+        ]
+      }
+    ],
+    "preco": 108.81,
+    "disponivel": true,
+    "codigo": "FP-0678",
+    "nomeNoSistema": "PERFUME FLOR DE LIS - FEMININO",
+    "imagem": {
+      "site": "/produtos/flor-de-lis.webp",
+      "siteJpg": "/produtos/flor-de-lis.jpg"
+    }
+  },
+  {
+    "id": "flor-de-magnolia",
+    "nome": "Flor de Magnólia",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 60,
+    "subtitulo": "EAU DE PARFUM · FEMININO · 60 ML",
+    "descricao": "Um perfume único de mulher, com cheiro de mulher: flor de magnólia, mandarina, jasmim, gengibre, frésia, almíscar e âmbar.",
+    "familiaOlfativa": "Floral",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#e9d0ba",
+    "notas": [
+      {
+        "nivel": "NOTAS",
+        "legenda": "composição",
+        "itens": [
+          "Flor de Magnólia",
+          "Mandarina",
+          "Jasmim",
+          "Gengibre",
+          "Frésia",
+          "Almíscar",
+          "Âmbar"
+        ]
+      }
+    ],
+    "preco": 108.81,
+    "disponivel": true,
+    "codigo": "FP-0684",
+    "nomeNoSistema": "PERFUME FLOR DE MAGNOLIA - FEMININO",
+    "imagem": {
+      "site": "/produtos/flor-de-magnolia.webp",
+      "siteJpg": "/produtos/flor-de-magnolia.jpg"
+    }
+  },
+  {
+    "id": "flora-angico",
+    "nome": "Angico",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": "Flora",
+    "genero": "unissex",
+    "volumeMl": 100,
+    "subtitulo": "PERFUME · LINHA FLORA · 100 ML",
+    "descricao": "Frescor e intensidade de forma única: bergamota e limão siciliano, um coração de rosa, violeta, canela e cravo, e base de âmbar, patchouli e baunilha.",
+    "familiaOlfativa": "Amadeirado Especiado",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#dec5af",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Bergamota",
+          "Limão Siciliano"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Rosa de Maio",
+          "Violeta",
+          "Canela",
+          "Cravo"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Âmbar",
+          "Patchouli",
+          "Benjoim",
+          "Baunilha",
+          "Musk"
+        ]
+      }
+    ],
+    "preco": 218.61,
+    "disponivel": true,
+    "codigo": "7908572204389",
+    "nomeNoSistema": "PERFUME ANGICO",
+    "imagem": {
+      "site": "/produtos/flora-angico.webp",
+      "siteJpg": "/produtos/flora-angico.jpg"
+    }
+  },
+  {
+    "id": "flora-bromelia",
+    "nome": "Bromélia",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": "Flora",
+    "genero": "unissex",
+    "volumeMl": 100,
+    "subtitulo": "PERFUME · LINHA FLORA · 100 ML",
+    "descricao": "Floral e frutado, fresco e sedutor: a suculência da maçã com cassis, damasco e o toque cítrico da toranja, num coração floral e aquático.",
+    "familiaOlfativa": "Floral Frutal",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#d3de99",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Maçã",
+          "Cassis",
+          "Damasco",
+          "Toranja"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Notas Florais",
+          "Notas Aquáticas"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Musk"
+        ]
+      }
+    ],
+    "preco": 227.61,
+    "disponivel": true,
+    "codigo": "7898612644902",
+    "nomeNoSistema": "PERFUME DE BROMELIA",
+    "imagem": {
+      "site": "/produtos/flora-bromelia.webp",
+      "siteJpg": "/produtos/flora-bromelia.jpg"
+    }
+  },
+  {
+    "id": "flora-cumaru",
+    "nome": "Cumaru",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": "Flora",
+    "genero": "unissex",
+    "volumeMl": 100,
+    "subtitulo": "PERFUME · LINHA FLORA · 100 ML",
+    "descricao": "Fragrância envolvente e sofisticada, com o aroma amadeirado e adocicado do cumaru. Perfeita para momentos que exigem presença e personalidade.",
+    "familiaOlfativa": "Amadeirado Adocicado",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#e8ca97",
+    "notas": [],
+    "preco": 218.61,
+    "disponivel": true,
+    "codigo": "FP-0644",
+    "nomeNoSistema": "PERFUME CUMARU",
+    "imagem": {
+      "site": "/produtos/flora-cumaru.webp",
+      "siteJpg": "/produtos/flora-cumaru.jpg"
+    }
+  },
+  {
+    "id": "flora-flor-de-jurema",
+    "nome": "Flor de Jurema",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": "Flora",
+    "genero": "unissex",
+    "volumeMl": 100,
+    "subtitulo": "PERFUME · LINHA FLORA · 100 ML",
+    "descricao": "Notas cítricas e herbais que dão lugar a um coração floral e a um fundo tenro e levemente sedutor de madeiras e musgo.",
+    "familiaOlfativa": "Floral Amadeirado",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#d3b08d",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Notas Cítricas",
+          "Notas Herbais"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Rosa",
+          "Jasmim",
+          "Lírio do Vale"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Cedro",
+          "Vetiver",
+          "Musgo de Carvalho"
+        ]
+      }
+    ],
+    "preco": 197.91,
+    "disponivel": true,
+    "codigo": "FP-0638",
+    "nomeNoSistema": "PERFUME FLOR DE JUREMA",
+    "imagem": {
+      "site": "/produtos/flora-flor-de-jurema.webp",
+      "siteJpg": "/produtos/flora-flor-de-jurema.jpg"
+    }
+  },
+  {
+    "id": "flora-flor-de-lima",
+    "nome": "Flor de Lima",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": "Flora",
+    "genero": "unissex",
+    "volumeMl": 100,
+    "subtitulo": "PERFUME · LINHA FLORA · 100 ML",
+    "descricao": "Essência cítrica aromática, elegante e sofisticada, com a força e o frescor da mandarina e da lima da Pérsia.",
+    "familiaOlfativa": "Cítrica Aromática",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#c5dbb4",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Mandarina",
+          "Lima da Pérsia",
+          "Pomelo"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Coentro",
+          "Eucalipto",
+          "Cardamomo"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Musk",
+          "Cedro",
+          "Vetiver"
+        ]
+      }
+    ],
+    "preco": 197.91,
+    "disponivel": true,
+    "codigo": "7898612643646",
+    "nomeNoSistema": "PERFUME FLOR DE LIMA",
+    "imagem": {
+      "site": "/produtos/flora-flor-de-lima.webp",
+      "siteJpg": "/produtos/flora-flor-de-lima.jpg"
+    }
+  },
+  {
+    "id": "flora-gengibre",
+    "nome": "Gengibre",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": "Flora",
+    "genero": "unissex",
+    "volumeMl": 100,
+    "subtitulo": "PERFUME · LINHA FLORA · 100 ML",
+    "descricao": "Amadeirada cítrica: o picante do gengibre com a refrescância do limão, da laranja e da bergamota, e um fundo sofisticado e elegante.",
+    "familiaOlfativa": "Amadeirado Cítrico",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#e0d5a4",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Gengibre",
+          "Limão",
+          "Laranja",
+          "Bergamota"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Cravo-da-Índia",
+          "Noz-Moscada",
+          "Lavandin"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Patchouli",
+          "Musk",
+          "Vetiver",
+          "Âmbar"
+        ]
+      }
+    ],
+    "preco": 197.91,
+    "disponivel": true,
+    "codigo": "FP-0634",
+    "nomeNoSistema": "PERFUME GENGIBRE",
+    "imagem": {
+      "site": "/produtos/flora-gengibre.webp",
+      "siteJpg": "/produtos/flora-gengibre.jpg"
+    }
+  },
+  {
+    "id": "flora-jasmim",
+    "nome": "Jasmim",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": "Flora",
+    "genero": "unissex",
+    "volumeMl": 100,
+    "subtitulo": "PERFUME · LINHA FLORA · 100 ML",
+    "descricao": "Floral envolvente, que abre com a doçura do cassis e notas cítricas e floresce em damasco, jasmim sambac e heliotropo.",
+    "familiaOlfativa": "Floral",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#e6deb4",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Cassis",
+          "Limão",
+          "Pomelo",
+          "Mandarina"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Damasco",
+          "Jasmim Sambac",
+          "Flor de Heliotropo"
+        ]
+      }
+    ],
+    "preco": 227.61,
+    "disponivel": true,
+    "codigo": "7908572200091",
+    "nomeNoSistema": "PERFUME JASMIM",
+    "imagem": {
+      "site": "/produtos/flora-jasmim.webp",
+      "siteJpg": "/produtos/flora-jasmim.jpg"
+    }
+  },
+  {
+    "id": "flora-jatoba",
+    "nome": "Jatobá",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": "Flora",
+    "genero": "unissex",
+    "volumeMl": 100,
+    "subtitulo": "PERFUME · LINHA FLORA · 100 ML",
+    "descricao": "A essência da natureza em sua forma mais vibrante e sofisticada: abertura fresca e picante, coração aromático e base profunda e duradoura.",
+    "familiaOlfativa": "Amadeirado Aromático",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#e8dbca",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Pimenta-Rosa",
+          "Bergamota",
+          "Mandarina Verde",
+          "Limão Siciliano",
+          "Cardamomo"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Noz-Moscada",
+          "Tomilho",
+          "Gerânio Bourbon",
+          "Folhas de Cedro"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Cedro",
+          "Âmbar",
+          "Benjoim"
+        ]
+      }
+    ],
+    "preco": 218.61,
+    "disponivel": true,
+    "codigo": "7908572204372",
+    "nomeNoSistema": "PERFUME JATOBA",
+    "imagem": {
+      "site": "/produtos/flora-jatoba.webp",
+      "siteJpg": "/produtos/flora-jatoba.jpg"
+    }
+  },
+  {
+    "id": "flora-manjericao",
+    "nome": "Manjericão",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": "Flora",
+    "genero": "unissex",
+    "volumeMl": 100,
+    "subtitulo": "PERFUME · LINHA FLORA · 100 ML",
+    "descricao": "O aroma intenso do manjericão com bergamota, laranja doce e limão, num fundo suave, sofisticado e amadeirado.",
+    "familiaOlfativa": "Herbal Aromática",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#b4d0a2",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Manjericão",
+          "Bergamota",
+          "Laranja Doce",
+          "Limão"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Jasmim",
+          "Lírio",
+          "Violeta"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Patchouli",
+          "Cedro",
+          "Musgo"
+        ]
+      }
+    ],
+    "preco": 197.91,
+    "disponivel": true,
+    "codigo": "FP-0633",
+    "nomeNoSistema": "PERFUME MANJERICÃO",
+    "imagem": {
+      "site": "/produtos/flora-manjericao.webp",
+      "siteJpg": "/produtos/flora-manjericao.jpg"
+    }
+  },
+  {
+    "id": "flora-no1",
+    "nome": "Flora Nº1",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 100,
+    "subtitulo": "PERFUME · FEMININO · 100 ML",
+    "descricao": "A essência de uma mulher livre, audaciosa e surpreendente: um chypre floral que abre cítrico, floresce em rosa e ylang ylang e fecha em madeiras, baunilha e fava tonka.",
+    "familiaOlfativa": "Chypre Floral",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#f3b9a2",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Notas Cítricas"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Rosa",
+          "Ylang Ylang"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Madeiras",
+          "Baunilha",
+          "Fava Tonka"
+        ]
+      }
+    ],
+    "preco": 248.31,
+    "disponivel": true,
+    "codigo": "7898612647941",
+    "nomeNoSistema": "PERFUME FLORA N 1",
+    "imagem": {
+      "site": "/produtos/flora-no1.webp",
+      "siteJpg": "/produtos/flora-no1.jpg"
+    }
+  },
+  {
+    "id": "flora-no2",
+    "nome": "Flora Nº2",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 100,
+    "subtitulo": "PERFUME · FEMININO · 100 ML",
+    "descricao": "Um floral oriental que vai além do convencional: abre com açafrão e laranja amarga, acolhe em jasmim e pralinê e fecha com musgo, madeira ambarada e âmbar.",
+    "familiaOlfativa": "Floral Oriental",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#ff8f86",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Açafrão",
+          "Laranja Amarga"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Jasmim",
+          "Pralinê"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Âmbar",
+          "Musgo",
+          "Madeira Ambarada"
+        ]
+      }
+    ],
+    "preco": 267.21,
+    "disponivel": true,
+    "codigo": "7908572203108",
+    "nomeNoSistema": "PERFUME FLORA N° 2",
+    "imagem": {
+      "site": "/produtos/flora-no2.webp",
+      "siteJpg": "/produtos/flora-no2.jpg"
+    }
+  },
+  {
+    "id": "flora-pau-darco",
+    "nome": "Pau d'Arco",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": "Flora",
+    "genero": "unissex",
+    "volumeMl": 100,
+    "subtitulo": "PERFUME · LINHA FLORA · 100 ML",
+    "descricao": "Fragrância natural com notas amadeiradas e florais, que conecta você à essência pura da natureza.",
+    "familiaOlfativa": "Amadeirado Floral",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#e4cc95",
+    "notas": [],
+    "preco": 218.61,
+    "disponivel": true,
+    "codigo": "FP-0642",
+    "nomeNoSistema": "PERFUME PAU D`ARCO",
+    "imagem": {
+      "site": "/produtos/flora-pau-darco.webp",
+      "siteJpg": "/produtos/flora-pau-darco.jpg"
+    }
+  },
+  {
+    "id": "flora-petit-grain",
+    "nome": "Petit Grain",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": "Flora",
+    "genero": "unissex",
+    "volumeMl": 100,
+    "subtitulo": "PERFUME · LINHA FLORA · 100 ML",
+    "descricao": "Floral aromática intensa, marcante e atemporal, indicada para todas as ocasiões: rosas, flor de laranjeira e limão siciliano.",
+    "familiaOlfativa": "Floral Aromática",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#d4daab",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Rosa",
+          "Flor de Laranjeira",
+          "Limão Siciliano"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Muguet",
+          "Gerânio",
+          "Maçã"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Musk",
+          "Frutas Vermelhas",
+          "Jasmim",
+          "Mel"
+        ]
+      }
+    ],
+    "preco": 197.91,
+    "disponivel": true,
+    "codigo": "FP-0635",
+    "nomeNoSistema": "PERFUME PETIT GRAIN",
+    "imagem": {
+      "site": "/produtos/flora-petit-grain.webp",
+      "siteJpg": "/produtos/flora-petit-grain.jpg"
+    }
+  },
+  {
+    "id": "flora-pura-black",
+    "nome": "Flora Pura Black",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "masculino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE TOILETTE · FOR MEN · 100 ML",
+    "descricao": "Aroma intenso, vibrante e sedutor, perfeito para todas as ocasiões, acentuado por madeiras nobres.",
+    "familiaOlfativa": null,
+    "intensidade": 3,
+    "destaque": null,
+    "cor": "#d8d8d8",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Tangerina",
+          "Pimenta Rosa",
+          "Noz-Moscada"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Cedro",
+          "Patchouli",
+          "Vetiver"
+        ]
+      }
+    ],
+    "preco": 207.81,
+    "disponivel": true,
+    "codigo": "FP-0680",
+    "nomeNoSistema": "PERFUME BLACK - MASCULINO",
+    "imagem": {
+      "site": "/produtos/flora-pura-black.webp",
+      "siteJpg": "/produtos/flora-pura-black.jpg"
+    }
+  },
+  {
+    "id": "flora-verbena-provence",
+    "nome": "Verbena Provence",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": "Flora",
+    "genero": "unissex",
+    "volumeMl": 100,
+    "subtitulo": "PERFUME · LINHA FLORA · 100 ML",
+    "descricao": "Energia e frescor cítricos com o bem-estar da verbena, num coração suave de gardênia, jasmim e muguet.",
+    "familiaOlfativa": "Cítrica Aromática",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#d5e0a4",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Limão",
+          "Grapefruit",
+          "Bergamota",
+          "Mandarina",
+          "Verbena"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Gardênia",
+          "Jasmim",
+          "Muguet"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Musk",
+          "Cedro",
+          "Cipreste"
+        ]
+      }
+    ],
+    "preco": 218.61,
+    "disponivel": true,
+    "codigo": "7898612643820",
+    "nomeNoSistema": "PERFUME VERBENA PROVENCE",
+    "imagem": {
+      "site": "/produtos/flora-verbena-provence.webp",
+      "siteJpg": "/produtos/flora-verbena-provence.jpg"
+    }
+  },
+  {
+    "id": "flora-vetiver",
+    "nome": "Vetiver",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": "Flora",
+    "genero": "unissex",
+    "volumeMl": 100,
+    "subtitulo": "PERFUME · LINHA FLORA · 100 ML",
+    "descricao": "Amadeirado e refrescante, com limão, pomelo e cardamomo na abertura e um corpo de madeira cashmere com baunilha.",
+    "familiaOlfativa": "Amadeirado",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#bfd38e",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Limão",
+          "Pomelo",
+          "Cardamomo"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Madeira Cashmere",
+          "Baunilha"
+        ]
+      }
+    ],
+    "preco": 207.81,
+    "disponivel": true,
+    "codigo": "FP-0640",
+    "nomeNoSistema": "PERFUME VETIVER",
+    "imagem": {
+      "site": "/produtos/flora-vetiver.webp",
+      "siteJpg": "/produtos/flora-vetiver.jpg"
+    }
+  },
+  {
+    "id": "future-man",
+    "nome": "Future Man",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "masculino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · MASCULINO · 100 ML",
+    "descricao": "Para homens que enxergam além do presente e transformam cada desafio em oportunidade: abertura cítrica e luminosa e base intensa e duradoura.",
+    "familiaOlfativa": "Cítrica Aromática",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#939ec5",
+    "notas": [
+      {
+        "nivel": "CABEÇA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Toranja"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Ambroxan"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Musk",
+          "Âmbar",
+          "Notas Amadeiradas"
+        ]
+      }
+    ],
+    "preco": 207.81,
+    "disponivel": true,
+    "codigo": "57908572206505",
+    "nomeNoSistema": "PERFUME FUTURE MEN - MASCULINO",
+    "imagem": {
+      "site": "/produtos/future-man.webp",
+      "siteJpg": "/produtos/future-man.jpg"
+    }
+  },
+  {
+    "id": "future-men-classico",
+    "nome": "Future Man Clássico",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "masculino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · MASCULINO · 100 ML",
+    "descricao": "Para o homem moderno, uma fragrância amadeirada e picante com a essência marcante de grapefruit e laranja.",
+    "familiaOlfativa": "Amadeirado Picante",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#afbfdb",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Grapefruit",
+          "Laranja"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Pelargonium",
+          "Pimenta"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Benjoim",
+          "Vetiver",
+          "Cedro",
+          "Patchouli"
+        ]
+      }
+    ],
+    "preco": 207.81,
+    "disponivel": true,
+    "codigo": "57908572206505",
+    "nomeNoSistema": "PERFUME FUTURE MEN - MASCULINO",
+    "imagem": {
+      "site": "/produtos/future-men-classico.webp",
+      "siteJpg": "/produtos/future-men-classico.jpg"
+    }
+  },
+  {
+    "id": "future-woman",
+    "nome": "Future Woman",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · FEMININO · 100 ML",
+    "descricao": "Criado para a mulher moderna e para todas as ocasiões, com bergamota, patchouli e sândalo que dão um toque especial e marcante.",
+    "familiaOlfativa": "Floral",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#c5d0e0",
+    "notas": [
+      {
+        "nivel": "DESTAQUES",
+        "legenda": "notas principais",
+        "itens": [
+          "Bergamota",
+          "Patchouli",
+          "Sândalo"
+        ]
+      }
+    ],
+    "preco": 207.81,
+    "disponivel": true,
+    "codigo": "7898612649402",
+    "nomeNoSistema": "PERFUME FUTURE WOMAN - FEMININO",
+    "imagem": {
+      "site": "/produtos/future-woman.webp",
+      "siteJpg": "/produtos/future-woman.jpg"
+    }
+  },
+  {
+    "id": "gardenia",
+    "nome": "Gardênia",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · FEMININO · 100 ML",
+    "descricao": "A sofisticação e a delicadeza da gardênia numa fragrância floral intensa que traduz feminilidade e frescor natural.",
+    "familiaOlfativa": "Floral",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#e6caba",
+    "notas": [
+      {
+        "nivel": "DESTAQUE",
+        "legenda": "nota principal",
+        "itens": [
+          "Gardênia"
+        ]
+      }
+    ],
+    "preco": null,
+    "disponivel": true,
+    "codigo": "7908572201630",
+    "nomeNoSistema": "PERFUME GARDENIA 100ML",
+    "imagem": {
+      "site": "/produtos/gardenia.webp",
+      "siteJpg": "/produtos/gardenia.jpg"
+    }
+  },
+  {
+    "id": "general",
+    "nome": "General",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "masculino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · MASCULINO · 100 ML",
+    "descricao": "Fragrância cítrica e amadeirada, perfeita para todas as ocasiões, com limão japonês, canela e noz-moscada sobre a autenticidade do sândalo.",
+    "familiaOlfativa": "Cítrico Amadeirado",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#c5ba93",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Limão Japonês"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Canela",
+          "Noz-Moscada"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Sândalo"
+        ]
+      }
+    ],
+    "preco": 233.91,
+    "disponivel": true,
+    "codigo": "FP-0692",
+    "nomeNoSistema": "PERFUME GENERAL - MASCULINO",
+    "imagem": {
+      "site": "/produtos/general.webp",
+      "siteJpg": "/produtos/general.jpg"
+    }
+  },
+  {
+    "id": "gioia",
+    "nome": "Gioia",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 50,
+    "subtitulo": "EAU DE PARFUM · FEMININO · 50 ML",
+    "descricao": "Floral frutal aquática e sensorial, inspirada na natureza: cedro e maçã verde com o frescor do bambu e a intensidade do jasmim.",
+    "familiaOlfativa": "Floral Frutal",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#a793db",
+    "notas": [
+      {
+        "nivel": "DESTAQUES",
+        "legenda": "notas principais",
+        "itens": [
+          "Cedro",
+          "Maçã Verde",
+          "Bambu",
+          "Jasmim"
+        ]
+      }
+    ],
+    "preco": 108.81,
+    "disponivel": true,
+    "codigo": "FP-0674",
+    "nomeNoSistema": "PERFUME GIOIA - FEMININO",
+    "imagem": {
+      "site": "/produtos/gioia.webp",
+      "siteJpg": "/produtos/gioia.jpg"
+    }
+  },
+  {
+    "id": "gold-flora",
+    "nome": "Gold Flora",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "masculino",
+    "volumeMl": 80,
+    "subtitulo": "EAU DE PARFUM · POUR HOMME · 80 ML",
+    "descricao": "Sofisticação contemporânea masculina, inspirada na nobreza e na modernidade. Uma fusão de elementos amadeirados e doces que faz de cada borrifada uma jornada olfativa única.",
+    "familiaOlfativa": "Amadeirado Aromático",
+    "intensidade": null,
+    "destaque": "LANÇAMENTO",
+    "cor": "#e8b45c",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Bergamota da Itália",
+          "Pimenta Rosa",
+          "Limão Siciliano",
+          "Cardamomo",
+          "Grapefruit"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Tomilho Branco",
+          "Lavanda da França"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Cedro da Virgínia",
+          "Patchouli",
+          "Praliné",
+          "Musgo"
+        ]
+      }
+    ],
+    "preco": 269.91,
+    "disponivel": true,
+    "codigo": "FP-0705",
+    "nomeNoSistema": "PERFUME GOLD FLORA - MASCULINO",
+    "imagem": {
+      "site": "/produtos/gold-flora.webp",
+      "siteJpg": "/produtos/gold-flora.jpg"
+    }
+  },
+  {
+    "id": "helena",
+    "nome": "Helena",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · FEMININO · 100 ML",
+    "descricao": "Simboliza a energia da mulher dona de um brilho radiante: um conforto amadeirado e elegante, com íris e jasmim no coração.",
+    "familiaOlfativa": "Amadeirado Floral",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#dbc59e",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Cardamomo",
+          "Pimenta Preta"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Íris",
+          "Jasmim"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Madeiras",
+          "Sândalo"
+        ]
+      }
+    ],
+    "preco": 248.31,
+    "disponivel": true,
+    "codigo": "7908572201579",
+    "nomeNoSistema": "PERFUME HELENA FEMININO",
+    "imagem": {
+      "site": "/produtos/helena.webp",
+      "siteJpg": "/produtos/helena.jpg"
+    }
+  },
+  {
+    "id": "hera",
+    "nome": "Hera",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · FEMININO · 100 ML",
+    "descricao": "Desenvolvida para mulheres de atitude: maçã vermelha e ameixa com a personalidade do lírio do vale e do jasmim, e fundo de especiarias e baunilha.",
+    "familiaOlfativa": "Chypre Frutal",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#d0a488",
+    "notas": [
+      {
+        "nivel": "TOPO",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Maçã Vermelha",
+          "Ameixa"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Lírio do Vale",
+          "Jasmim"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Especiarias",
+          "Baunilha"
+        ]
+      }
+    ],
+    "preco": 215.91,
+    "disponivel": true,
+    "codigo": "7898612644537",
+    "nomeNoSistema": "PERFUME HERA - FEMININO",
+    "imagem": {
+      "site": "/produtos/hera.webp",
+      "siteJpg": "/produtos/hera.jpg"
+    }
+  },
+  {
+    "id": "heros",
+    "nome": "Héros",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "masculino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · MASCULINO · 100 ML",
+    "descricao": "Simboliza a masculinidade do homem moderno: notas apimentadas e orientais, almíscar realçado por madeiras e fundo de vetiver e âmbar.",
+    "familiaOlfativa": "Amadeirado Spice",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#8ea9d5",
+    "notas": [
+      {
+        "nivel": "DESTAQUES",
+        "legenda": "notas principais",
+        "itens": [
+          "Almíscar",
+          "Cedro Azul",
+          "Ébano Preto"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Vetiver",
+          "Âmbar"
+        ]
+      }
+    ],
+    "preco": 237.51,
+    "disponivel": true,
+    "codigo": "7898612648573",
+    "nomeNoSistema": "PERFUME HEROS MEN - MASCULINO",
+    "imagem": {
+      "site": "/produtos/heros.webp",
+      "siteJpg": "/produtos/heros.jpg"
+    }
+  },
+  {
+    "id": "lady-flora",
+    "nome": "Lady Flora",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 80,
+    "subtitulo": "EAU DE PARFUM · POUR FEMME · 80 ML",
+    "descricao": "A essência da feminilidade e do romance em cada borrifada. Um perfume exuberante, criado para mulheres que celebram sua elegância e sofisticação.",
+    "familiaOlfativa": "Floral Verde",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#e8b45c",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Bergamota",
+          "Grapefruit",
+          "Pimenta Rosa"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Rosa Turca",
+          "Pêssego",
+          "Flor de Peônia",
+          "Noz-Moscada"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Âmbar",
+          "Musk",
+          "Baunilha"
+        ]
+      }
+    ],
+    "preco": 269.91,
+    "disponivel": true,
+    "codigo": "FP-0706",
+    "nomeNoSistema": "PERFUME LADY FLORA - FEMININO",
+    "imagem": {
+      "site": "/produtos/lady-flora.webp",
+      "siteJpg": "/produtos/lady-flora.jpg"
+    }
+  },
+  {
+    "id": "lolla",
+    "nome": "Lolla",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": "Vintage",
+    "genero": "feminino",
+    "volumeMl": 50,
+    "subtitulo": "EAU DE PARFUM · FEMININO · 50 ML",
+    "descricao": "Vibrante, feminina e encantadora: notas florais e frutadas num aroma leve e envolvente, que reflete alegria, jovialidade e elegância.",
+    "familiaOlfativa": "Floral Frutal",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#e8a9d0",
+    "notas": [],
+    "preco": 108.81,
+    "disponivel": true,
+    "codigo": "FP-0677",
+    "nomeNoSistema": "PERFUME LOLLA - FEMININO",
+    "imagem": {
+      "site": "/produtos/lolla.webp",
+      "siteJpg": "/produtos/lolla.jpg"
+    }
+  },
+  {
+    "id": "lorenzo",
+    "nome": "Lorenzo",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "masculino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · MASCULINO · 100 ML",
+    "descricao": "Fragrância amadeirada, perfeita para o dia a dia, com bergamota e folhas de violeta, um toque de noz-moscada e pimenta rosa.",
+    "familiaOlfativa": "Amadeirado",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#9ebad0",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Bergamota",
+          "Folhas de Violeta"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Noz-Moscada",
+          "Pimenta Rosa"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Patchouli",
+          "Vetiver"
+        ]
+      }
+    ],
+    "preco": 207.81,
+    "disponivel": true,
+    "codigo": "FP-0682",
+    "nomeNoSistema": "PERFUME LORENZO - MASCULINO",
+    "imagem": {
+      "site": "/produtos/lorenzo.webp",
+      "siteJpg": "/produtos/lorenzo.jpg"
+    }
+  },
+  {
+    "id": "mellis",
+    "nome": "Mellis",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · FEMININO · 100 ML",
+    "descricao": "Um jardim florido que evoca o néctar das flores: feminina, moderna e envolvente, doce e forte, delicada e intensa.",
+    "familiaOlfativa": "Floral Frutal",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#e8d0a9",
+    "notas": [
+      {
+        "nivel": "CABEÇA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Manga",
+          "Bergamota",
+          "Lima"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Tuberosa",
+          "Íris",
+          "Pétalas de Rosa",
+          "Violeta"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Sândalo",
+          "Mel Dourado"
+        ]
+      }
+    ],
+    "preco": 299.61,
+    "disponivel": true,
+    "codigo": "7908572205188",
+    "nomeNoSistema": "PERFUME MELLIS-FEMININO",
+    "imagem": {
+      "site": "/produtos/mellis.webp",
+      "siteJpg": "/produtos/mellis.jpg"
+    }
+  },
+  {
+    "id": "new-joy",
+    "nome": "New Joy",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · POUR FEMME · 100 ML",
+    "descricao": "Uma gentileza fresca e apaixonante: abertura cítrica e revigorante, com um toque suave de orvalho que traz a sensação fresca e pura da natureza.",
+    "familiaOlfativa": null,
+    "intensidade": 3,
+    "destaque": null,
+    "cor": "#f58cc0",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Mandarina",
+          "Bergamota",
+          "Orvalho"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Flor de Laranjeira",
+          "Lírio-do-Vale",
+          "Rosa Branca"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Musk",
+          "Âmbar",
+          "Sândalo"
+        ]
+      }
+    ],
+    "preco": 237.51,
+    "disponivel": true,
+    "codigo": "FP-0660",
+    "nomeNoSistema": "PERFUME NEW JOY",
+    "imagem": {
+      "site": "/produtos/new-joy.webp",
+      "siteJpg": "/produtos/new-joy.jpg"
+    }
+  },
+  {
+    "id": "nina",
+    "nome": "Nina",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": "Vintage",
+    "genero": "feminino",
+    "volumeMl": 50,
+    "subtitulo": "EAU DE PARFUM · FEMININO · 50 ML",
+    "descricao": "Delicada e sofisticada, para mulheres que valorizam a elegância em cada detalhe: notas florais e frutadas que traduzem feminilidade e leveza.",
+    "familiaOlfativa": "Floral Frutal",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#99dbd0",
+    "notas": [],
+    "preco": 108.81,
+    "disponivel": true,
+    "codigo": "FP-0681",
+    "nomeNoSistema": "PERFUME NINA FEMME - FEMININO",
+    "imagem": {
+      "site": "/produtos/nina.webp",
+      "siteJpg": "/produtos/nina.jpg"
+    }
+  },
+  {
+    "id": "perseu",
+    "nome": "Perseu",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "masculino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · POUR HOMME · 100 ML",
+    "descricao": "Frescor aquático e elegância clássica: abre cítrico e aromático, evolui em lavanda e jasmim e fecha amadeirado.",
+    "familiaOlfativa": null,
+    "intensidade": 3,
+    "destaque": null,
+    "cor": "#4fd6d6",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Limão",
+          "Bergamota",
+          "Pera",
+          "Maçã",
+          "Cardamomo"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Lavanda",
+          "Jasmim",
+          "Muguet"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Sândalo",
+          "Patchouli",
+          "Cedro",
+          "Fava Tonka",
+          "Musk"
+        ]
+      }
+    ],
+    "preco": 248.31,
+    "disponivel": true,
+    "codigo": "FP-0683",
+    "nomeNoSistema": "PERFUME PERSEU - POUR HOMME - MASCULINO",
+    "imagem": {
+      "site": "/produtos/perseu.webp",
+      "siteJpg": "/produtos/perseu.jpg"
+    }
+  },
+  {
+    "id": "pink",
+    "nome": "Pink",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE TOILETTE · FEMININO · 100 ML",
+    "descricao": "Feminino, provocante e docemente envolvente: almíscar, benjoim e caramelo com baunilha e flores brancas, para quem vive o agora com atitude.",
+    "familiaOlfativa": "Floral Gourmand",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#f193c5",
+    "notas": [
+      {
+        "nivel": "DESTAQUES",
+        "legenda": "notas principais",
+        "itens": [
+          "Almíscar",
+          "Benjoim",
+          "Caramelo",
+          "Baunilha",
+          "Flores Brancas"
+        ]
+      }
+    ],
+    "preco": 179.91,
+    "disponivel": true,
+    "codigo": "FP-0679",
+    "nomeNoSistema": "PERFUME PINK - FEMININO",
+    "imagem": {
+      "site": "/produtos/pink.webp",
+      "siteJpg": "/produtos/pink.jpg"
+    }
+  },
+  {
+    "id": "rosa-da-bulgaria",
+    "nome": "Rosa da Bulgária",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 60,
+    "subtitulo": "EAU DE PARFUM · FEMININO · 60 ML",
+    "descricao": "Envolvente, suave e sofisticada: uma fragrância que encanta e aflora as mais suaves lembranças.",
+    "familiaOlfativa": "Floral",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#ebbfca",
+    "notas": [
+      {
+        "nivel": "NOTAS",
+        "legenda": "composição",
+        "itens": [
+          "Tangerina",
+          "Jasmim",
+          "Lírio Oriental",
+          "Rosa da Bulgária"
+        ]
+      }
+    ],
+    "preco": 116.91,
+    "disponivel": true,
+    "codigo": "FP-0686",
+    "nomeNoSistema": "PERFUME ROSA DA BULGARIA - FEMININO",
+    "imagem": {
+      "site": "/produtos/rosa-da-bulgaria.webp",
+      "siteJpg": "/produtos/rosa-da-bulgaria.jpg"
+    }
+  },
+  {
+    "id": "rosa-mosqueta",
+    "nome": "Rosa Mosqueta",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · FEMININO · 100 ML",
+    "descricao": "Sofisticação e elegância: champanhe rosé borbulhando no ar, flores de pêssego e rosas e um fundo de almíscar branco e madeiras.",
+    "familiaOlfativa": "Chypre Floral",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#f1af99",
+    "notas": [
+      {
+        "nivel": "CABEÇA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Champanhe Rosé",
+          "Pimenta Rosa"
+        ]
+      },
+      {
+        "nivel": "CORAÇÃO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Flor de Pêssego",
+          "Rosa"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Almíscar Branco",
+          "Notas Amadeiradas"
+        ]
+      }
+    ],
+    "preco": 257.31,
+    "disponivel": true,
+    "codigo": "FP-0661",
+    "nomeNoSistema": "PERUME ROSA MOSQUETA",
+    "imagem": {
+      "site": "/produtos/rosa-mosqueta.webp",
+      "siteJpg": "/produtos/rosa-mosqueta.jpg"
+    }
+  },
+  {
+    "id": "selvagem-intense",
+    "nome": "Selvagem Intense",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "masculino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · POUR HOMME · 100 ML",
+    "descricao": "Captura a essência da liberdade, a força da natureza e o espírito indomável do homem moderno. Frescor e profundidade num convite a explorar o desconhecido.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": "EDIÇÃO ESPECIAL",
+    "cor": "#f0924a",
+    "notas": [],
+    "preco": 269.91,
+    "disponivel": true,
+    "codigo": "FP-0689",
+    "nomeNoSistema": "PERFUME SELVAGEM INTENSE - MASCULINO",
+    "imagem": {
+      "site": "/produtos/selvagem-intense.webp",
+      "siteJpg": "/produtos/selvagem-intense.jpg"
+    }
+  },
+  {
+    "id": "selvagem",
+    "nome": "Selvagem",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "masculino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · POUR HOMME · 100 ML",
+    "descricao": "Fragrância marcante, com o toque de especiarias e o frescor das ervas aromáticas.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#b6d968",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Pimenta",
+          "Bergamota da Calábria",
+          "Lavanda"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Vetiver",
+          "Patchouli",
+          "Cedro"
+        ]
+      }
+    ],
+    "preco": 217.71,
+    "disponivel": true,
+    "codigo": "FP-0688",
+    "nomeNoSistema": "PERFUME SELVAGEM - MASCULINO",
+    "imagem": {
+      "site": "/produtos/selvagem.webp",
+      "siteJpg": "/produtos/selvagem.jpg"
+    }
+  },
+  {
+    "id": "sultao",
+    "nome": "Sultão",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "masculino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · MASCULINO · 100 ML",
+    "descricao": "Poderoso, intenso e ousado: a rosa entrelaçada com o nobre incenso do oriente, num aroma hipnotizante.",
+    "familiaOlfativa": "Oriental Floral",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#d08883",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Rosa",
+          "Incenso",
+          "Bergamota",
+          "Pimenta Rosa"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Elemi",
+          "Noz-Moscada",
+          "Jasmim"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Musk",
+          "Âmbar",
+          "Patchouli"
+        ]
+      }
+    ],
+    "preco": 238.41,
+    "disponivel": true,
+    "codigo": "FP-0669",
+    "nomeNoSistema": "PERFUME SULTÃO - MASCULINO",
+    "imagem": {
+      "site": "/produtos/sultao.webp",
+      "siteJpg": "/produtos/sultao.jpg"
+    }
+  },
+  {
+    "id": "xodo-pour-femme",
+    "nome": "Xodó",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · POUR FEMME · 100 ML",
+    "descricao": "Uma fragrância sofisticada e elegante, especialmente criada para a mulher moderna e confiante, com a delicadeza do jasmim contrastada pelo doce do caramelo e do âmbar.",
+    "familiaOlfativa": "Floral Amber",
+    "intensidade": 5,
+    "destaque": null,
+    "cor": "#f0b093",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Bergamota",
+          "Mandarina",
+          "Pimenta Rosa"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Jasmim",
+          "Rosa",
+          "Violeta",
+          "Lírio do Vale"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Musk",
+          "Caramelo",
+          "Cedro",
+          "Âmbar",
+          "Patchouli"
+        ]
+      }
+    ],
+    "preco": 225.81,
+    "disponivel": true,
+    "codigo": "7908572201913",
+    "nomeNoSistema": "PERFUME XODO POUR FEMME FEMININO",
+    "imagem": {
+      "site": "/produtos/xodo-pour-femme.webp",
+      "siteJpg": "/produtos/xodo-pour-femme.jpg"
+    }
+  },
+  {
+    "id": "xodo-pour-homme",
+    "nome": "Xodó",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "masculino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · POUR HOMME · 100 ML",
+    "descricao": "Uma fragrância elegante e sofisticada para homens que querem se destacar em qualquer ocasião, com a saída da uva combinada com cítricos, canela e noz-moscada.",
+    "familiaOlfativa": "Amadeirado Picante",
+    "intensidade": 4,
+    "destaque": null,
+    "cor": "#d9b27a",
+    "notas": [
+      {
+        "nivel": "TOPO",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Grapefruit",
+          "Mandarina",
+          "Limão",
+          "Uva"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Cravo",
+          "Canela",
+          "Menta",
+          "Noz-Moscada",
+          "Rosa"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Madeira Gualaco",
+          "Sândalo",
+          "Patchouli",
+          "Âmbar",
+          "Couro"
+        ]
+      }
+    ],
+    "preco": 225.81,
+    "disponivel": true,
+    "codigo": "FP-0703",
+    "nomeNoSistema": "PERFUME XODO POUR HOMME MASCULINO",
+    "imagem": {
+      "site": "/produtos/xodo-pour-homme.webp",
+      "siteJpg": "/produtos/xodo-pour-homme.jpg"
+    }
+  },
+  {
+    "id": "zafirah",
+    "nome": "Zafirah",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · FEMININO · 100 ML",
+    "descricao": "Para a mulher moderna e forte: uma composição chypre floral que exala o lado feminino e sensual, ideal para a noite.",
+    "familiaOlfativa": "Chypre Floral",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#f6bf88",
+    "notas": [
+      {
+        "nivel": "DESTAQUES",
+        "legenda": "notas principais",
+        "itens": [
+          "Flor de Laranjeira",
+          "Patchouli"
+        ]
+      }
+    ],
+    "preco": 227.61,
+    "disponivel": true,
+    "codigo": "7898612645459",
+    "nomeNoSistema": "PERFUME ZAFIRAH FEMININO",
+    "imagem": {
+      "site": "/produtos/zafirah.webp",
+      "siteJpg": "/produtos/zafirah.jpg"
+    }
+  },
+  {
+    "id": "zelia-boaventura",
+    "nome": "Zélia Boaventura",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · FEMININO · 100 ML",
+    "descricao": "Elegante e marcante, expressa a feminilidade e o bom gosto. Um perfume sofisticado e perfeito para ocasiões especiais.",
+    "familiaOlfativa": "Floral Solar Amadeirado",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#e8c5a4",
+    "notas": [
+      {
+        "nivel": "CABEÇA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Flor de Laranjeira",
+          "Mandarina"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Mel",
+          "Rosas"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Cedro",
+          "Patchouli"
+        ]
+      }
+    ],
+    "preco": 217.71,
+    "disponivel": true,
+    "codigo": "FP-0663",
+    "nomeNoSistema": "PERFUME ZELIA BOAVENTURA",
+    "imagem": {
+      "site": "/produtos/zelia-boaventura.webp",
+      "siteJpg": "/produtos/zelia-boaventura.jpg"
+    }
+  },
+  {
+    "id": "zelia-eternity",
+    "nome": "Zélia Eternity",
+    "categoria": "perfume",
+    "tipo": "perfume",
+    "linha": null,
+    "genero": "feminino",
+    "volumeMl": 100,
+    "subtitulo": "EAU DE PARFUM · FEMININO · 100 ML",
+    "descricao": "Nasce da delicadeza que atravessa o tempo: a leveza suculenta da pera Williams, o romantismo da ervilha-de-cheiro e o rastro limpo do almíscar branco.",
+    "familiaOlfativa": "Aromática Frutal",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#f1dbba",
+    "notas": [
+      {
+        "nivel": "SAÍDA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Pera Williams"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Ervilha-de-Cheiro"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Almíscar Branco"
+        ]
+      }
+    ],
+    "preco": 295.0,
+    "disponivel": true,
+    "codigo": "7908572206260",
+    "nomeNoSistema": "PERFUME ZELIA BOAVENTURA ETERNITY",
+    "imagem": {
+      "site": "/produtos/zelia-eternity.webp",
+      "siteJpg": "/produtos/zelia-eternity.jpg"
+    }
+  },
+  {
+    "id": "body-splash-aurora-essence",
+    "nome": "Aurora Essence",
+    "categoria": "bodysplash",
+    "tipo": "body-splash",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 250,
+    "subtitulo": "BODY SPLASH · DESODORANTE COLÔNIA · 250 ML",
+    "descricao": "Uma fragrância âmbar floral que envolve os sentidos com delicadeza e sofisticação, leve, feminina e cheia de personalidade.",
+    "familiaOlfativa": "Âmbar Floral",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#ff9f7e",
+    "notas": [
+      {
+        "nivel": "CABEÇA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Bergamota",
+          "Pera",
+          "Pêssego"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Jasmim",
+          "Néroli",
+          "Magnólia"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Musgo",
+          "Baunilha",
+          "Âmbar",
+          "Cedro"
+        ]
+      }
+    ],
+    "preco": 89.91,
+    "disponivel": true,
+    "codigo": "FP-0042",
+    "nomeNoSistema": "BODY SPRASH AURORA ESSENCE",
+    "imagem": {
+      "site": "/produtos/body-splash-aurora-essence.webp",
+      "siteJpg": "/produtos/body-splash-aurora-essence.jpg"
+    }
+  },
+  {
+    "id": "body-splash-ceu-de-cores-zelinha-lab-200ml-flora-pura",
+    "nome": "Body Splash Céu de Cores Zelinha Lab",
+    "categoria": "bodysplash",
+    "tipo": "body-splash",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 200,
+    "subtitulo": "PERFUMARIA · 200 ML",
+    "descricao": "do Produto: Descubra a leveza e a diversão do Body Splash Céu de Cores Zelinha Lab Flora Pura 200ml, especialmente desenvolvido para crianças.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#bfd6d8",
+    "notas": [],
+    "preco": 89.9,
+    "disponivel": true,
+    "codigo": "7908572206765",
+    "nomeNoSistema": "BODY SPLASH ZELINHA LAB - CÉU E CORES",
+    "imagem": {
+      "site": "/produtos/body-splash-ceu-de-cores-zelinha-lab-200ml-flora-pura.webp",
+      "siteJpg": "/produtos/body-splash-ceu-de-cores-zelinha-lab-200ml-flora-pura.jpg"
+    }
+  },
+  {
+    "id": "body-splash-doce-vanilla",
+    "nome": "Doce Vanilla",
+    "categoria": "bodysplash",
+    "tipo": "body-splash",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 250,
+    "subtitulo": "BODY SPLASH · DESODORANTE COLÔNIA · 250 ML",
+    "descricao": "Âmbar gourmand aveludado e envolvente, com abertura cítrica, coração floral e fundo doce de baunilha, âmbar, cashmere e caramelo.",
+    "familiaOlfativa": "Âmbar Gourmand",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#e8b45c",
+    "notas": [
+      {
+        "nivel": "CABEÇA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Bergamota",
+          "Limão Siciliano"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Orquídea",
+          "Lírio",
+          "Magnólia"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Baunilha",
+          "Âmbar",
+          "Cashmere",
+          "Caramelo"
+        ]
+      }
+    ],
+    "preco": 89.91,
+    "disponivel": true,
+    "codigo": "FP-0039",
+    "nomeNoSistema": "BODY SPRASH DOCE VANILLA",
+    "imagem": {
+      "site": "/produtos/body-splash-doce-vanilla.webp",
+      "siteJpg": "/produtos/body-splash-doce-vanilla.jpg"
+    }
+  },
+  {
+    "id": "body-splash-elegance-style",
+    "nome": "Elegance Style",
+    "categoria": "bodysplash",
+    "tipo": "body-splash",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 250,
+    "subtitulo": "BODY SPLASH · DESODORANTE COLÔNIA · 250 ML",
+    "descricao": "Floral delicado e elegante, que abre frutado com lichia, frésia e peônia e fecha macio com musk, cedro e ambergris.",
+    "familiaOlfativa": "Floral",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#dcc8b6",
+    "notas": [
+      {
+        "nivel": "CABEÇA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Lichia",
+          "Frésia",
+          "Peônia"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Rosa",
+          "Magnólia",
+          "Lírio do Vale"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Musk",
+          "Cedro",
+          "Ambergris"
+        ]
+      }
+    ],
+    "preco": 89.91,
+    "disponivel": true,
+    "codigo": "FP-0040",
+    "nomeNoSistema": "BODY SPRASH ELEGANCE STYLE",
+    "imagem": {
+      "site": "/produtos/body-splash-elegance-style.webp",
+      "siteJpg": "/produtos/body-splash-elegance-style.jpg"
+    }
+  },
+  {
+    "id": "body-splash-elisia",
+    "nome": "Elísia",
+    "categoria": "bodysplash",
+    "tipo": "body-splash",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 250,
+    "subtitulo": "BODY SPLASH · DESODORANTE COLÔNIA · 250 ML",
+    "descricao": "Body splash com partículas de brilho que iluminam suavemente a pele, num oriental floral quente, sedutor e acolhedor.",
+    "familiaOlfativa": "Oriental Floral",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#c8a6f5",
+    "notas": [
+      {
+        "nivel": "CABEÇA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Gengibre",
+          "Tangerina",
+          "Bergamota"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Jasmim",
+          "Baunilha"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Musk",
+          "Sândalo",
+          "Cashmere"
+        ]
+      }
+    ],
+    "preco": 89.9,
+    "disponivel": true,
+    "codigo": "7908572205447",
+    "nomeNoSistema": "BODY SPRASH ELÍSIA",
+    "imagem": {
+      "site": "/produtos/body-splash-elisia.webp",
+      "siteJpg": "/produtos/body-splash-elisia.jpg"
+    }
+  },
+  {
+    "id": "body-splash-liberty-grace",
+    "nome": "Liberty Grace",
+    "categoria": "bodysplash",
+    "tipo": "body-splash",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 250,
+    "subtitulo": "BODY SPLASH · DESODORANTE COLÔNIA · 250 ML",
+    "descricao": "Floral aromático refrescante e leve, com cassis, mandarina e bergamota na abertura e fundo cremoso de baunilha de Madagascar.",
+    "familiaOlfativa": "Floral Aromática",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#ff8394",
+    "notas": [
+      {
+        "nivel": "CABEÇA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Cassis",
+          "Petitgrain",
+          "Mandarina",
+          "Bergamota"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Jasmim",
+          "Lavanda",
+          "Flor de Laranjeira"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Musk",
+          "Âmbar",
+          "Baunilha de Madagascar"
+        ]
+      }
+    ],
+    "preco": 89.91,
+    "disponivel": true,
+    "codigo": "7908572204822",
+    "nomeNoSistema": "BODY SPRASH LIBERTY GRACE",
+    "imagem": {
+      "site": "/produtos/body-splash-liberty-grace.webp",
+      "siteJpg": "/produtos/body-splash-liberty-grace.jpg"
+    }
+  },
+  {
+    "id": "body-splash-sonho-de-infancia-zelinha-lab-200ml-flora-pura",
+    "nome": "Body Splash Sonho de Infância Zelinha Lab",
+    "categoria": "bodysplash",
+    "tipo": "body-splash",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 200,
+    "subtitulo": "PERFUMARIA · 200 ML",
+    "descricao": "Descubra o Body Splash Sonho de Infância Zelinha Lab Flora Pura 200ml, especialmente desenvolvido para crianças que adoram explorar o mundo com alegria e imaginação.",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#e6c3bf",
+    "notas": [
+      {
+        "nivel": "DESTAQUES",
+        "legenda": "em resumo",
+        "itens": [
+          "Fácil aplicação com borrifador atomizador",
+          "Fórmula leve e não oleosa, para uso diário",
+          "Embalagem segura e prática para crianças",
+          "Nome do Produto"
+        ]
+      }
+    ],
+    "preco": 89.9,
+    "disponivel": true,
+    "codigo": "7908572206758",
+    "nomeNoSistema": "BODY SPLASH ZELINHA LAB -- SONHO DE INFÂNCIA",
+    "imagem": {
+      "site": "/produtos/body-splash-sonho-de-infancia-zelinha-lab-200ml-flora-pura.webp",
+      "siteJpg": "/produtos/body-splash-sonho-de-infancia-zelinha-lab-200ml-flora-pura.jpg"
+    }
+  },
+  {
+    "id": "body-splash-toque-secreto-midnight-pulse-flora-pura",
+    "nome": "Body Splash Toque Secreto Midnight Pulse",
+    "categoria": "bodysplash",
+    "tipo": "body-splash",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": null,
+    "subtitulo": "CABELO",
+    "descricao": "Body Splash Masculino Toque Secreto Midnight Pulse Flora Pura 250ml Fragrância Oriental Amadeirada | Edição Especial For Men Midnight Pulse: uma fragrância masculina envolvente…",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#e2dbc8",
+    "notas": [],
+    "preco": null,
+    "disponivel": true,
+    "codigo": "FP-0037",
+    "nomeNoSistema": "BODY SPLASH MIDNIGHT PULSE TOQUE SECRETO",
+    "imagem": {
+      "site": "/produtos/body-splash-toque-secreto-midnight-pulse-flora-pura.webp",
+      "siteJpg": "/produtos/body-splash-toque-secreto-midnight-pulse-flora-pura.jpg"
+    }
+  },
+  {
+    "id": "body-splash-toque-secreto-rose-obsession-flora-pura",
+    "nome": "Body Splash Toque Secreto Rose Obsession",
+    "categoria": "bodysplash",
+    "tipo": "body-splash",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": null,
+    "subtitulo": "PERFUMARIA",
+    "descricao": "Body Splash Feminino Toque Secreto Rose Obsession Flora Pura 250ml Fragrância Oriental Floral | Edição Especial Pour Femme Rose Obsession: uma fragrância feminina envolvente…",
+    "familiaOlfativa": null,
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#dfc5c3",
+    "notas": [],
+    "preco": null,
+    "disponivel": true,
+    "codigo": "7908572206321",
+    "nomeNoSistema": "BODY SPLASH ROSE OBSESSION TOQUE SECRETO",
+    "imagem": {
+      "site": "/produtos/body-splash-toque-secreto-rose-obsession-flora-pura.webp",
+      "siteJpg": "/produtos/body-splash-toque-secreto-rose-obsession-flora-pura.jpg"
+    }
+  },
+  {
+    "id": "body-splash-tunisia",
+    "nome": "Tunísia",
+    "categoria": "bodysplash",
+    "tipo": "body-splash",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 250,
+    "subtitulo": "BODY SPLASH · DESODORANTE COLÔNIA · 250 ML",
+    "descricao": "Sofisticação, frescor e sensualidade em cada borrifada: abre cítrica, floresce em jasmim sambac e fecha com musk, vetiver, sândalo, baunilha e fava tonka.",
+    "familiaOlfativa": "Oriental Floral",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#74d9a4",
+    "notas": [
+      {
+        "nivel": "CABEÇA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Mandarina",
+          "Flor de Laranjeira"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Cedro Branco",
+          "Jasmim Sambac"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Musk",
+          "Vetiver",
+          "Sândalo",
+          "Baunilha",
+          "Fava Tonka"
+        ]
+      }
+    ],
+    "preco": 89.91,
+    "disponivel": true,
+    "codigo": "FP-0041",
+    "nomeNoSistema": "BODY SPRASH TUNÍSIA",
+    "imagem": {
+      "site": "/produtos/body-splash-tunisia.webp",
+      "siteJpg": "/produtos/body-splash-tunisia.jpg"
+    }
+  },
+  {
+    "id": "body-splash-velvet-bloom",
+    "nome": "Velvet Bloom",
+    "categoria": "bodysplash",
+    "tipo": "body-splash",
+    "linha": null,
+    "genero": "unissex",
+    "volumeMl": 250,
+    "subtitulo": "BODY SPLASH · DESODORANTE COLÔNIA · 250 ML",
+    "descricao": "Oriental floral intenso e confortável, com cassis e amêndoas na abertura, rosa, jasmim e tuberosa no coração e fundo de cacau e fava tonka.",
+    "familiaOlfativa": "Oriental Floral",
+    "intensidade": null,
+    "destaque": null,
+    "cor": "#85b4ff",
+    "notas": [
+      {
+        "nivel": "CABEÇA",
+        "legenda": "primeiros minutos",
+        "itens": [
+          "Cassis",
+          "Amêndoas",
+          "Bergamota"
+        ]
+      },
+      {
+        "nivel": "CORPO",
+        "legenda": "o coração da fragrância",
+        "itens": [
+          "Rosa",
+          "Jasmim",
+          "Tuberosa"
+        ]
+      },
+      {
+        "nivel": "FUNDO",
+        "legenda": "o rastro que fica",
+        "itens": [
+          "Musk",
+          "Cacau",
+          "Âmbar",
+          "Fava Tonka"
+        ]
+      }
+    ],
+    "preco": 80.91,
+    "disponivel": true,
+    "codigo": "7908572204761",
+    "nomeNoSistema": "BODY SPRASH VELVET BLOOM",
+    "imagem": {
+      "site": "/produtos/body-splash-velvet-bloom.webp",
+      "siteJpg": "/produtos/body-splash-velvet-bloom.jpg"
+    }
+  }
+]

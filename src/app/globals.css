@@ -1,0 +1,87 @@
+@import 'tailwindcss';
+
+/*
+ * Identidade Flora Pura
+ * - flora: teal da marca (#096C6C) e variações
+ * - creme/areia: fundos quentes, como papel e embalagem kraft
+ * - salvia: verde de apoio, natural
+ * - mel: destaque âmbar, lembra frasco de perfume
+ */
+@theme {
+  --font-display: var(--font-fraunces), Georgia, serif;
+  --font-sans: var(--font-manrope), system-ui, sans-serif;
+
+  --color-flora-50: #eef6f5;
+  --color-flora-100: #d3e9e7;
+  --color-flora-200: #a8d2ce;
+  --color-flora-300: #6fb3ad;
+  --color-flora-400: #2f8f8a;
+  --color-flora-500: #0d7c7b;
+  --color-flora-600: #096c6c;
+  --color-flora-700: #075757;
+  --color-flora-800: #064545;
+  --color-flora-900: #043333;
+
+  --color-creme: #faf7f1;
+  --color-areia-100: #f3ede2;
+  --color-areia-200: #e8dfcf;
+  --color-areia-300: #d6c9b2;
+
+  --color-salvia-100: #e6eee6;
+  --color-salvia-500: #7d9a82;
+  --color-salvia-700: #4f6a55;
+
+  --color-mel-100: #f8ecd9;
+  --color-mel-400: #d9a35b;
+  --color-mel-600: #a8702c;
+
+  --color-tinta: #1f2d2b;
+  --color-tinta-suave: #5b6b68;
+
+  --color-perigo-50: #fbecea;
+  --color-perigo-600: #b4443a;
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.25rem;
+
+  --shadow-suave: 0 1px 2px rgb(31 45 43 / 0.04), 0 4px 16px rgb(31 45 43 / 0.06);
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background-color: var(--color-creme);
+  color: var(--color-tinta);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Remove setas de input number (quantidade, parcelas) */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+@keyframes surgir {
+  from { opacity: 0; transform: translateY(6px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes fundo {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@utility animate-surgir {
+  animation: surgir 180ms ease-out both;
+}
+
+@utility animate-fundo {
+  animation: fundo 150ms ease-out both;
+}
