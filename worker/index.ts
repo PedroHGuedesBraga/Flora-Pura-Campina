@@ -21,7 +21,11 @@ export interface Env {
   DEV_BYPASS_ACCESS?: string; // "1" só em desenvolvimento local (.dev.vars)
 }
 
-type Linha = { id: string; preco: number | null; promo: number | null; oculto: number; nome: string | null; descricao: string | null; atualizado: string };
+// Preços ficam no banco em CENTAVOS inteiros (preco_c, promo_c), como no caixa; a API fala em reais.
+// As colunas antigas preco/promo (REAL, em reais) só existem por compatibilidade e ficam vazias.
+type Linha = { id: string; preco_c: number | null; promo_c: number | null; oculto: number; nome: string | null; descricao: string | null; atualizado: string };
+const reais = (c: number | null) => (c == null ? null : c / 100);
+const centavos = (r: number | null) => (r == null ? null : Math.round(r * 100));
 
 const json = (data: unknown, status = 200, extra: HeadersInit = {}) =>
   new Response(JSON.stringify(data), { status, headers: { 'content-type': 'application/json; charset=utf-8', ...extra } });
@@ -30,15 +34,24 @@ let tabelaPronta = false;
 async function garantirTabela(db: D1Database) {
   if (tabelaPronta) return;
   await db.exec(
-    'CREATE TABLE IF NOT EXISTS ajustes (id TEXT PRIMARY KEY, preco REAL, promo REAL, oculto INTEGER NOT NULL DEFAULT 0, nome TEXT, descricao TEXT, atualizado TEXT NOT NULL)',
+    'CREATE TABLE IF NOT EXISTS ajustes (id TEXT PRIMARY KEY, preco REAL, promo REAL, preco_c INTEGER, promo_c INTEGER, oculto INTEGER NOT NULL DEFAULT 0, nome TEXT, descricao TEXT, atualizado TEXT NOT NULL)',
   );
-  // migração única da tabela antiga `precos` (só preço) para `ajustes`
-  try {
-    await db.exec('INSERT OR IGNORE INTO ajustes (id, preco, atualizado) SELECT id, preco, atualizado FROM precos');
-    await db.exec('DROP TABLE precos');
-  } catch {
-    /* tabela antiga não existe: nada a migrar */
+  // migração reais (REAL) -> centavos (INTEGER): tabela criada antes de preco_c existir
+  const { results: cols } = await db.prepare('PRAGMA table_info(ajustes)').all<{ name: string }>();
+  if (!cols.some((c) => c.name === 'preco_c')) {
+    try {
+      await db.exec('ALTER TABLE ajustes ADD COLUMN preco_c INTEGER');
+      await db.exec('ALTER TABLE ajustes ADD COLUMN promo_c INTEGER');
+    } catch {
+      /* outra requisição já adicionou as colunas */
+    }
   }
+  // idempotente: converte só o que ainda está nas colunas antigas e zera elas, tudo na mesma transação
+  await db.batch([
+    db.prepare('UPDATE ajustes SET preco_c = CAST(ROUND(preco * 100) AS INTEGER) WHERE preco IS NOT NULL AND preco_c IS NULL'),
+    db.prepare('UPDATE ajustes SET promo_c = CAST(ROUND(promo * 100) AS INTEGER) WHERE promo IS NOT NULL AND promo_c IS NULL'),
+    db.prepare('UPDATE ajustes SET preco = NULL, promo = NULL WHERE preco IS NOT NULL OR promo IS NOT NULL'),
+  ]);
   await db.exec(
     'CREATE TABLE IF NOT EXISTS cupons (codigo TEXT PRIMARY KEY, pct INTEGER NOT NULL, uso_unico INTEGER NOT NULL DEFAULT 1, ativo INTEGER NOT NULL DEFAULT 1, criado TEXT NOT NULL)',
   );
@@ -115,12 +128,12 @@ export default {
     await garantirTabela(env.DB);
 
     if (path === '/api/ajustes' && req.method === 'GET') {
-      const { results } = await env.DB.prepare('SELECT id, preco, promo, oculto, nome, descricao FROM ajustes').all<Linha>();
+      const { results } = await env.DB.prepare('SELECT id, preco_c, promo_c, oculto, nome, descricao FROM ajustes').all<Linha>();
       const out: Record<string, Record<string, unknown>> = {};
       for (const r of results) {
         const a: Record<string, unknown> = {};
-        if (r.preco != null) a.preco = r.preco;
-        if (r.promo != null) a.promo = r.promo;
+        if (r.preco_c != null) a.preco = reais(r.preco_c);
+        if (r.promo_c != null) a.promo = reais(r.promo_c);
         if (r.oculto) a.oculto = true;
         if (r.nome) a.nome = r.nome;
         if (r.descricao) a.descricao = r.descricao;
@@ -160,8 +173,9 @@ export default {
       if (!(await acessoValido(req, env))) return json({ erro: 'não autorizado' }, 401);
 
       if (path === '/api/admin/ajustes' && req.method === 'GET') {
-        const { results } = await env.DB.prepare('SELECT id, preco, promo, oculto, nome, descricao, atualizado FROM ajustes').all();
-        return json(results, 200, { 'cache-control': 'no-store' });
+        const { results } = await env.DB.prepare('SELECT id, preco_c, promo_c, oculto, nome, descricao, atualizado FROM ajustes').all<Linha>();
+        const linhas = results.map(({ preco_c, promo_c, ...r }) => ({ ...r, preco: reais(preco_c), promo: reais(promo_c) }));
+        return json(linhas, 200, { 'cache-control': 'no-store' });
       }
 
       if (path === '/api/admin/cupons' && req.method === 'GET') {
@@ -208,10 +222,10 @@ export default {
           return json({ id: m[1], removido: true });
         }
         await env.DB.prepare(
-          'INSERT INTO ajustes (id, preco, promo, oculto, nome, descricao, atualizado) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7) ' +
-            'ON CONFLICT(id) DO UPDATE SET preco = ?2, promo = ?3, oculto = ?4, nome = ?5, descricao = ?6, atualizado = ?7',
+          'INSERT INTO ajustes (id, preco_c, promo_c, oculto, nome, descricao, atualizado) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7) ' +
+            'ON CONFLICT(id) DO UPDATE SET preco_c = ?2, promo_c = ?3, oculto = ?4, nome = ?5, descricao = ?6, atualizado = ?7',
         )
-          .bind(m[1], p, pr, oculto, nome, desc, new Date().toISOString())
+          .bind(m[1], centavos(p), centavos(pr), oculto, nome, desc, new Date().toISOString())
           .run();
         return json({ id: m[1], preco: p, promo: pr, oculto: !!oculto, nome, descricao: desc });
       }
