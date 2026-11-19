@@ -48,3 +48,20 @@ export const emPromocao = (p: Produto) => p.preco != null && p.promo != null && 
 export const valor = (p: Produto) => (emPromocao(p) ? (p.promo as number) : p.preco);
 // Percentual inteiro de desconto (sem casas decimais); 0 se arredondar para menos de 1%.
 export const desconto = (p: Produto) => (emPromocao(p) ? Math.round((1 - (p.promo as number) / (p.preco as number)) * 100) : 0);
+
+// ---- cupom ----
+export type Cupom = { codigo: string; pct: number; usoUnico: boolean };
+export const soDigitos = (s: string) => s.replace(/\D/g, '');
+export function cpfValido(c: string): boolean {
+  if (!/^\d{11}$/.test(c) || /^(\d)\1{10}$/.test(c)) return false;
+  for (const n of [9, 10]) {
+    let soma = 0;
+    for (let i = 0; i < n; i++) soma += Number(c[i]) * (n + 1 - i);
+    if (((soma * 10) % 11) % 10 !== Number(c[n])) return false;
+  }
+  return true;
+}
+export const mascaraCpf = (s: string) =>
+  soDigitos(s).slice(0, 11).replace(/^(\d{3})(\d)/, '$1.$2').replace(/^(\d{3})\.(\d{3})(\d)/, '$1.$2.$3').replace(/\.(\d{3})(\d)/, '.$1-$2');
+// Cupom só vale em itens SEM preço promocional.
+export const elegivelCupom = (p: Produto) => p.preco != null && !emPromocao(p);

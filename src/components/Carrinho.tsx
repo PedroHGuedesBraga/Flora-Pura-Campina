@@ -2,7 +2,7 @@
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { Minus, Plus, ShoppingBag, Trash2, X } from 'lucide-react';
-import { MOSTRAR_PRECO, TIPOS, brl, desconto, emPromocao, valor, produtos as base, type Produto } from '@/lib';
+import { MOSTRAR_PRECO, TIPOS, brl, cpfValido, desconto, elegivelCupom, emPromocao, mascaraCpf, soDigitos, valor, produtos as base, type Cupom, type Produto } from '@/lib';
 import { useProdutos } from '@/components/Dados';
 
 // Número da loja (formato wa.me: DDI + DDD + número, só dígitos)
@@ -90,7 +90,12 @@ export function BotaoCarrinho() {
   );
 }
 
-function montarMensagem(linhas: { p: Produto; q: number }[]) {
+type Linha = { p: Produto; q: number };
+// Desconto do cupom: só nos itens sem preço promocional (arredondado em centavos)
+const descontoCupom = (linhas: Linha[], cupom: Cupom | null) =>
+  cupom ? Math.round(linhas.filter(({ p }) => elegivelCupom(p)).reduce((s, { p, q }) => s + (p.preco as number) * q, 0) * cupom.pct) / 100 : 0;
+
+function montarMensagem(linhas: Linha[], cupom: Cupom | null, cliente: { cpf: string; nome: string } | null) {
   const partes = linhas.map(({ p, q }, i) => {
     const vol = p.volumeMl ? ` ${p.volumeMl}ml` : '';
     const preco = !MOSTRAR_PRECO || p.preco == null ? '' : emPromocao(p) ? ` (de ${brl(p.preco)} por ${brl(valor(p) as number)} cada, ${desconto(p)}% OFF)` : ` (${brl(p.preco)} cada)`;
@@ -98,19 +103,81 @@ function montarMensagem(linhas: { p: Produto; q: number }[]) {
   });
   const soma = linhas.reduce((s, { p, q }) => s + (valor(p) ?? 0) * q, 0);
   const semPreco = linhas.some(({ p }) => p.preco == null);
-  const totalTxt = MOSTRAR_PRECO && soma > 0 ? `\n\nTotal estimado: ${brl(soma)}${semPreco ? ' (+ itens sem preço informado)' : ''}` : '';
-  return `Olá! Gostaria de fazer um pedido:\n\n${partes.join('\n')}${totalTxt}`;
+  const desc = descontoCupom(linhas, cupom);
+  const cupomTxt = cupom && desc > 0 ? `\n\nCupom ${cupom.codigo} (${cupom.pct}% nos itens sem promoção): -${brl(desc)}` : '';
+  const totalTxt = MOSTRAR_PRECO && soma > 0 ? `${cupomTxt}\n\nTotal estimado: ${brl(soma - desc)}${semPreco ? ' (+ itens sem preço informado)' : ''}` : '';
+  const clienteTxt = cupom?.usoUnico && cliente ? `\n\nCliente: ${cliente.nome}\nCPF: ${mascaraCpf(cliente.cpf)}` : '';
+  return `Olá! Gostaria de fazer um pedido:\n\n${partes.join('\n')}${totalTxt}${clienteTxt}`;
 }
 
 function Gaveta() {
   const { itens, total, alterar, remover, limpar, aberto, abrir } = useCarrinho();
   const produtos = useProdutos();
-  const linhas = useMemo(
+  const linhas = useMemo<Linha[]>(
     () => Object.entries(itens).flatMap(([id, q]) => { const p = produtos.find((x) => x.id === id); return p && !p.oculto ? [{ p, q }] : []; }),
     [itens, produtos],
   );
   const soma = linhas.reduce((s, { p, q }) => s + (valor(p) ?? 0) * q, 0);
-  const link = `https://wa.me/${WHATSAPP_LOJA}?text=${encodeURIComponent(montarMensagem(linhas))}`;
+  const [codigo, setCodigo] = useState('');
+  const [cupom, setCupom] = useState<Cupom | null>(null);
+  const [cpf, setCpf] = useState('');
+  const [nome, setNome] = useState('');
+  const [erroCupom, setErroCupom] = useState('');
+  const [enviando, setEnviando] = useState(false);
+
+  const temElegivel = linhas.some(({ p }) => elegivelCupom(p));
+  const cupomAtivo = cupom && temElegivel ? cupom : null; // carrinho todo em promoção: cupom não vale
+  const desc = descontoCupom(linhas, cupomAtivo);
+  const cliente = cupomAtivo?.usoUnico ? { cpf: soDigitos(cpf), nome: nome.trim().replace(/\s+/g, ' ') } : null;
+  const clienteOk = !cliente || (cpfValido(cliente.cpf) && cliente.nome.length >= 5 && cliente.nome.includes(' '));
+  const link = `https://wa.me/${WHATSAPP_LOJA}?text=${encodeURIComponent(montarMensagem(linhas, cupomAtivo, cliente))}`;
+
+  async function aplicar() {
+    setErroCupom('');
+    if (!codigo.trim()) return;
+    try {
+      const r = await fetch('/api/cupom/validar', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ codigo }) });
+      if (!r.ok) return setErroCupom('Cupom inválido');
+      setCupom((await r.json()) as Cupom);
+    } catch {
+      setErroCupom('Não foi possível validar o cupom agora');
+    }
+  }
+  function tirarCupom() {
+    setCupom(null);
+    setCodigo('');
+    setErroCupom('');
+  }
+
+  // Cupom de uso único: registra o uso (CPF + nome) antes de abrir o WhatsApp
+  async function enviarComCupom() {
+    if (!cupomAtivo || !cliente) return;
+    setErroCupom('');
+    if (!cpfValido(cliente.cpf)) return setErroCupom('CPF inválido');
+    if (!clienteOk) return setErroCupom('Informe o nome completo');
+    setEnviando(true);
+    const w = window.open('', '_blank'); // abre antes do await para o navegador não bloquear
+    try {
+      const r = await fetch('/api/cupom/usar', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ codigo: cupomAtivo.codigo, cpf: cliente.cpf, nome: cliente.nome }),
+      });
+      if (!r.ok) {
+        w?.close();
+        const d = (await r.json().catch(() => ({}))) as { erro?: string };
+        return setErroCupom(d.erro ?? 'Não foi possível usar o cupom');
+      }
+      if (w) w.location.href = link;
+      else window.location.href = link;
+    } catch {
+      w?.close();
+      setErroCupom('Não foi possível usar o cupom agora');
+    } finally {
+      setEnviando(false);
+    }
+  }
+  const botao = 'block w-full rounded-xl bg-[#25d366] py-3 text-center font-semibold text-white transition hover:brightness-95';
 
   if (!aberto) return null;
   return (
@@ -160,16 +227,51 @@ function Gaveta() {
           <footer className="space-y-3 border-t border-areia-200 p-4">
             <div className="flex justify-between text-sm">
               <span className="text-tinta-suave">{total} {total === 1 ? 'item' : 'itens'}</span>
-              {MOSTRAR_PRECO && soma > 0 && <span className="font-semibold text-flora-700">Total: {brl(soma)}</span>}
+              {MOSTRAR_PRECO && soma > 0 && <span className="font-semibold text-flora-700">Total: {brl(soma - desc)}</span>}
             </div>
-            <a
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block rounded-xl bg-[#25d366] py-3 text-center font-semibold text-white transition hover:brightness-95"
-            >
-              Enviar pedido pelo WhatsApp
-            </a>
+            {MOSTRAR_PRECO && desc > 0 && cupomAtivo && (
+              <p className="flex justify-between text-sm text-mel-600">
+                <span>Cupom {cupomAtivo.codigo} ({cupomAtivo.pct}% nos itens sem promoção)</span>
+                <span>-{brl(desc)}</span>
+              </p>
+            )}
+
+            {cupom ? (
+              <div className="space-y-2 rounded-xl border border-areia-200 bg-white p-3 text-sm">
+                <div className="flex items-center justify-between">
+                  <span className="font-semibold text-flora-800">Cupom {cupom.codigo} · {cupom.pct}% OFF</span>
+                  <button onClick={tirarCupom} className="text-xs text-tinta-suave underline-offset-2 hover:underline">Remover</button>
+                </div>
+                {!temElegivel ? (
+                  <p className="text-xs text-perigo-600">Seu carrinho só tem itens em promoção. O cupom vale apenas para itens sem desconto promocional.</p>
+                ) : (
+                  <p className="text-xs text-tinta-suave">O desconto vale somente para itens que não estão em promoção.</p>
+                )}
+                {cupomAtivo?.usoUnico && (
+                  <div className="space-y-2">
+                    <input value={cpf} onChange={(e) => setCpf(mascaraCpf(e.target.value))} inputMode="numeric" placeholder="CPF" autoComplete="off" className="w-full rounded-lg border border-areia-300 px-3 py-2 outline-none focus:border-flora-500" />
+                    <input value={nome} onChange={(e) => setNome(e.target.value)} placeholder="Nome completo" maxLength={120} autoComplete="name" className="w-full rounded-lg border border-areia-300 px-3 py-2 outline-none focus:border-flora-500" />
+                    <p className="text-xs text-gray-400">*esse cupom só pode ser usado uma vez por CPF*</p>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <div className="flex gap-2">
+                <input value={codigo} onChange={(e) => setCodigo(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && aplicar()} placeholder="Cupom de desconto" maxLength={30} className="min-w-0 flex-1 rounded-xl border border-areia-300 bg-white px-3 py-2 uppercase outline-none focus:border-flora-500" />
+                <button onClick={aplicar} className="rounded-xl border border-flora-600 px-4 py-2 text-sm font-semibold text-flora-700 hover:bg-areia-100">Aplicar</button>
+              </div>
+            )}
+            {erroCupom && <p className="text-xs text-perigo-600">{erroCupom}</p>}
+
+            {cupomAtivo?.usoUnico ? (
+              <button onClick={enviarComCupom} disabled={enviando || !clienteOk} className={`${botao} disabled:opacity-50`}>
+                {enviando ? 'Enviando...' : 'Enviar pedido pelo WhatsApp'}
+              </button>
+            ) : (
+              <a href={link} target="_blank" rel="noopener noreferrer" className={botao}>
+                Enviar pedido pelo WhatsApp
+              </a>
+            )}
             <button onClick={limpar} className="w-full text-sm text-tinta-suave underline-offset-2 hover:underline">
               Limpar carrinho
             </button>
