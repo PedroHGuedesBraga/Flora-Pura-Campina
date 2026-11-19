@@ -3,6 +3,17 @@
 import { useMemo, useState } from 'react';
 import { Search } from 'lucide-react';
 import { GENEROS, MOSTRAR_PRECO, TIPOS, brl, produtos, type Produto } from '@/lib';
+import { BotaoCarrinho, CarrinhoProvider, useCarrinho } from '@/components/Carrinho';
+
+function BotaoAdicionar({ id }: { id: string }) {
+  const { itens, adicionar } = useCarrinho();
+  const q = itens[id] ?? 0;
+  return (
+    <button onClick={() => adicionar(id)} className="w-full rounded-xl bg-flora-600 py-2 text-sm font-semibold text-white transition hover:bg-flora-700">
+      {q > 0 ? `Adicionar mais (${q} no carrinho)` : 'Adicionar ao carrinho'}
+    </button>
+  );
+}
 
 const norm = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 
@@ -21,24 +32,29 @@ function Chip({ ativo, onClick, children }: { ativo: boolean; onClick: () => voi
 
 function Cartao({ p, abrir }: { p: Produto; abrir: () => void }) {
   return (
-    <button onClick={abrir} className="group overflow-hidden rounded-2xl border border-areia-200 bg-white text-left shadow-suave transition hover:-translate-y-0.5 hover:border-flora-300">
-      <div className="relative aspect-[3/4] overflow-hidden bg-areia-100">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={p.imagem.site} alt={p.nome} loading="lazy" className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]" />
+    <div className="group flex flex-col overflow-hidden rounded-2xl border border-areia-200 bg-white text-left shadow-suave transition hover:-translate-y-0.5 hover:border-flora-300">
+      <button onClick={abrir} className="block flex-1 text-left">
+        <div className="relative aspect-[3/4] overflow-hidden bg-areia-100">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={p.imagem.site} alt={p.nome} loading="lazy" className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]" />
+        </div>
+        <div className="p-4 pb-2">
+          <p className="text-xs font-semibold uppercase tracking-wide text-mel-600">
+            {TIPOS[p.tipo]}
+            {p.volumeMl ? ` · ${p.volumeMl} ml` : ''}
+          </p>
+          <h3 className="mt-1 font-display text-lg leading-snug text-flora-800">{p.nome}</h3>
+          <p className="mt-0.5 text-sm text-tinta-suave">
+            {GENEROS[p.genero]}
+            {p.linha ? ` · Linha ${p.linha}` : ''}
+          </p>
+          {MOSTRAR_PRECO && p.preco != null && <p className="mt-2 font-semibold text-flora-700">{brl(p.preco)}</p>}
+        </div>
+      </button>
+      <div className="p-4 pt-2">
+        <BotaoAdicionar id={p.id} />
       </div>
-      <div className="p-4">
-        <p className="text-xs font-semibold uppercase tracking-wide text-mel-600">
-          {TIPOS[p.tipo]}
-          {p.volumeMl ? ` · ${p.volumeMl} ml` : ''}
-        </p>
-        <h3 className="mt-1 font-display text-lg leading-snug text-flora-800">{p.nome}</h3>
-        <p className="mt-0.5 text-sm text-tinta-suave">
-          {GENEROS[p.genero]}
-          {p.linha ? ` · Linha ${p.linha}` : ''}
-        </p>
-        {MOSTRAR_PRECO && p.preco != null && <p className="mt-2 font-semibold text-flora-700">{brl(p.preco)}</p>}
-      </div>
-    </button>
+    </div>
   );
 }
 
@@ -79,6 +95,7 @@ function Detalhe({ p, fechar }: { p: Produto; fechar: () => void }) {
               </div>
             )}
             {MOSTRAR_PRECO && p.preco != null && <p className="text-xl font-semibold text-flora-700">{brl(p.preco)}</p>}
+            <BotaoAdicionar id={p.id} />
           </div>
         </div>
       </div>
@@ -87,6 +104,15 @@ function Detalhe({ p, fechar }: { p: Produto; fechar: () => void }) {
 }
 
 export default function Catalogo() {
+  return (
+    <CarrinhoProvider>
+      <Vitrine />
+      <BotaoCarrinho />
+    </CarrinhoProvider>
+  );
+}
+
+function Vitrine() {
   const [busca, setBusca] = useState('');
   const [tipo, setTipo] = useState('');
   const [genero, setGenero] = useState('');
