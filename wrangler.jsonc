@@ -12,7 +12,7 @@
   "d1_databases": [{ "binding": "DB", "database_name": "flora-catalogo" }],
   "vars": {
     // Preencha depois de criar o app no Cloudflare Access (enquanto vazio, /api/admin fica fechado)
-    "ACCESS_TEAM_DOMAIN": "",
-    "ACCESS_AUD": ""
+    "ACCESS_TEAM_DOMAIN": "purple-frog-9728.cloudflareaccess.com",
+    "ACCESS_AUD": "7588d0072e3fd179d1783aca040dabd5da83201d84f04e05e56a5b4c109c36ef"
   }
 }
